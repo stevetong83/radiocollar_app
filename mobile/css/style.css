@@ -1,0 +1,40 @@
+body {
+  background: #2C3E50;
+  padding: 0;
+  margin: 0;
+  font-family: helvetica, arial, sans-serif;
+}
+
+#wrapper {
+  background: #2C3E50;
+}
+
+#header {
+  background-color: #1ABC9C;
+  max-height: 35px;
+  color: #2C3E50;
+  text-align: center;
+  font-size: 2.0em;
+  padding: 10px 0;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#content {
+  margin-top: 70px;
+}
+
+.btn-menu {
+  width: 90%;
+  margin: 15px auto;
+  max-height: 60px;
+  padding: 25px 0;
+  text-align: center;
+  color: #1ABC9C;
+  border: 3px solid #1ABC9C;
+  font-weight: bold;
+  font-size: 1.3em;
+  border-radius: 10px;
+}
