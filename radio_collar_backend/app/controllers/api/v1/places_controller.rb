@@ -1,7 +1,7 @@
 class ApiV1::PlacesController < ApplicationController
 
   def index
-
+    @places = current_user.places.all
   end
 
   def create

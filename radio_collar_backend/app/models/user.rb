@@ -27,4 +27,6 @@ class User
   field :authentication_token, :type => String
 
   has_many :places
+
+  before_save :ensure_authentication_token
 end
