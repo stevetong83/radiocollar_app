@@ -22,35 +22,31 @@
       if (firstScene != null) {
         this.scene = $(firstScene);
       }
+      if (firstScene != null) {
+        this.render(firstScene);
+      }
     }
 
     Theatre.prototype.goBack = function() {
-      if (this.sceneHistory.length > 0) {
-        return this.perform(this.lastStage.pop());
-      }
+      var back, previousScene;
+      back = this.sceneHistory.length - 1;
+      previousScene = this.sceneHistory[back];
+      this.scene = $(previousScene);
+      this.render(previousScene);
+      return this.sceneHistory.pop();
     };
 
-    Theatre.prototype.perform = function(scene, data) {
-      var new_content;
-      if (data == null) {
-        data = {};
-      }
+    Theatre.prototype.perform = function(scene) {
       if (this.scene) {
-        this.sceneHistory.concat(this.scene);
+        this.sceneHistory = this.sceneHistory.concat(this.scene.selector);
       }
       this.scene = $(scene);
-      this.stage.empty();
-      new_content = this.render(scene, data);
-      return this.stage.html($(new_content).html());
+      return this.render(scene);
     };
 
-    Theatre.prototype.render = function(scene, data) {
-      var compiled;
-      if (data == null) {
-        data = {};
-      }
-      compiled = _.template($(scene).text());
-      return compiled(data);
+    Theatre.prototype.render = function(scene) {
+      this.stage.empty();
+      return this.stage.html($(scene).html());
     };
 
     return Theatre;
@@ -58,8 +54,8 @@
   })();
 
   $(function() {
-    window.radioCollar = new Theatre({
-      stage: '#front_stage',
+    var radioCollar;
+    radioCollar = new Theatre({
       firstScene: '#scene3'
     });
     $('#back').click(function() {

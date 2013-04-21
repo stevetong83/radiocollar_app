@@ -8,21 +8,26 @@ class Theatre
     @stage         = $(stage)
     @sceneHistory  = []
     @scene         = $(firstScene) if firstScene?
+    @render firstScene if firstScene?
+
   goBack: ->
-    @perform @lastStage.pop() if @sceneHistory.length > 0
-  perform: (scene, data = {}) ->
-    @sceneHistory.concat(@scene) if @scene
+    back          = @sceneHistory.length - 1
+    previousScene = @sceneHistory[back] 
+    @scene        = $(previousScene)
+    @render previousScene
+    @sceneHistory.pop()
+
+  perform: (scene) ->
+    @sceneHistory = @sceneHistory.concat(@scene.selector) if @scene
     @scene = $(scene)
+    @render scene
+
+  render: (scene) ->
     @stage.empty()
-    new_content = @render(scene, data)
-    @stage.html($(new_content).html())
-  render: (scene, data = {}) ->
-    #This method returns a string formatted via underscore templates
-    compiled = _.template($(scene).text())
-    compiled(data)
+    @stage.html($(scene).html())
 
 $ ->
-  window.radioCollar = new Theatre {stage: '#front_stage',firstScene: '#scene3'}
+  radioCollar = new Theatre {firstScene: '#scene3'}
   $('#back').click ->
     radioCollar.goBack()
   $('#second').click ->
