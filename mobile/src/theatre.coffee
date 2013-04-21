@@ -1,16 +1,31 @@
-#ISBAT Go back
-#ISNBAT Go back if @lastStage == nil
-
 class Theatre
-  constructor: ((frontStage = $('#stage'), backStage = $('#back_stage'), scene = $('#main_scene')) ->
-    @frontStage = frontStage
-    @backStage  = backStage
-    @lastScene  = null
-    @scene      = scene
-  goTo: (stage) ->
-    #Is there anything in the stage?
-      #if so, set @lastStage to 
-      #fade out the stage if there's anything on it
-    #fade in the new stage
+  #Remember: Stages are passed as selector ID strings's, not JQuery selectors.
+  constructor: ({stage, firstScene, backStage}) ->
+    stage         ?= '#front_stage'
+    firstScene    ?= false
+    backStage     ?= '#back_stage'
+    $(backStage).hide()
+    @stage         = $(stage)
+    @sceneHistory  = []
+    @scene         = $(firstScene) if firstScene?
   goBack: ->
-    @goTo @lastStage
+    @perform @lastStage.pop() if @sceneHistory.length > 0
+  perform: (scene, data = {}) ->
+    @sceneHistory.concat(@scene) if @scene
+    @scene = $(scene)
+    @stage.empty()
+    new_content = @render(scene, data)
+    @stage.html($(new_content).html())
+  render: (scene, data = {}) ->
+    #This method returns a string formatted via underscore templates
+    compiled = _.template($(scene).text())
+    compiled(data)
+
+$ ->
+  window.radioCollar = new Theatre {stage: '#front_stage',firstScene: '#scene3'}
+  $('#back').click ->
+    radioCollar.goBack()
+  $('#second').click ->
+    radioCollar.perform('#scene2')
+  $('#first').click ->
+    radioCollar.perform('#scene1')

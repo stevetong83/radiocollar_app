@@ -5,14 +5,18 @@
   Theatre = (function() {
 
     function Theatre(_arg) {
-      var firstScene, stage;
-      stage = _arg.stage, firstScene = _arg.firstScene;
+      var backStage, firstScene, stage;
+      stage = _arg.stage, firstScene = _arg.firstScene, backStage = _arg.backStage;
       if (stage == null) {
         stage = '#front_stage';
       }
       if (firstScene == null) {
         firstScene = false;
       }
+      if (backStage == null) {
+        backStage = '#back_stage';
+      }
+      $(backStage).hide();
       this.stage = $(stage);
       this.sceneHistory = [];
       if (firstScene != null) {
@@ -27,6 +31,7 @@
     };
 
     Theatre.prototype.perform = function(scene, data) {
+      var new_content;
       if (data == null) {
         data = {};
       }
@@ -35,7 +40,8 @@
       }
       this.scene = $(scene);
       this.stage.empty();
-      this.stage.html($(scene).html());
+      new_content = this.render(scene, data);
+      return this.stage.html($(new_content).html());
     };
 
     Theatre.prototype.render = function(scene, data) {
@@ -43,7 +49,7 @@
       if (data == null) {
         data = {};
       }
-      compiled = _.template($(scene));
+      compiled = _.template($(scene).text());
       return compiled(data);
     };
 
@@ -52,14 +58,14 @@
   })();
 
   $(function() {
-    var radioCollar;
-    radioCollar = new Theatre({
+    window.radioCollar = new Theatre({
+      stage: '#front_stage',
       firstScene: '#scene3'
     });
     $('#back').click(function() {
       return radioCollar.goBack();
     });
-    $('#third').click(function() {
+    $('#second').click(function() {
       return radioCollar.perform('#scene2');
     });
     return $('#first').click(function() {
