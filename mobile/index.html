@@ -26,20 +26,34 @@
         loading...
       </div>
 
-      <div class="footer">(c) LobsterDev. Icons provided by the Noun Project</div>
+      <div id="footer">(c) LobsterDev. Icons provided by the Noun Project</div>
 
     </div>
 
   <div id="back_stage">
     <div id="scene1">
-      <h1>Menu</h1>
-      <a href="#" onClick="nav.perform('#send');" class='btn'>Send Your Location</a>
+      <div class="btn-group">
+      <a href="#" onClick="nav.perform('#send');" class='btn'> Send Your Location</a>
+      <a href="#" onClick="nav.perform('#send');" class='btn'>Send Saved Location</a>
+      <a href="#" onClick="nav.perform('#send');" class='btn'>View Past Waypoints</a>
+      </div>
     </div>
-    <div id="send">
-      <h1>Send</h1>
-      This is the send menu.
-      <a href="#" onClick="nav.goBack();" class= 'btn'> Go Back</a>
-    </div>
+
+<div id="send">
+  <h1>Send a waypoint</h1>
+  <p><strong>Status:</strong> <span id="status">Loading GPS...</span></p>
+  <form class="gpsControls">
+      <input class="input" id="sendName" name="name" type="text" placeholder="name">
+      <br>
+      <input class="input" id="lat" name="lat" type="text" placeholder="Waiting for longitude data...">
+      <br>
+      <input class="input" id="lng" name="lng" type="text" placeholder="Waiting for latitude data...">
+      <br>
+  </form>
+  <a href="#" class="btn" id="send">Send</a>
+  <a href="#" onClick="nav.goBack();" class= 'btn'>Back</a>
+</div>
+
   </div>
 
   </body>
