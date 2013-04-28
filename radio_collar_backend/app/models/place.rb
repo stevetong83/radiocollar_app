@@ -7,4 +7,6 @@ class Place
   field :long
 
   belongs_to :user
+
+  validates :name, :lat, :long, presence: true
 end

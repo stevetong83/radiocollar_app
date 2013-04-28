@@ -1,6 +1,6 @@
 class Api::V1::RegistrationsController < Api::V1::ApiController
-  # skip_before_filter :authenticate_user!, only: :create
-  # skip_before_filter :verify_authenticity_token,  only: :create
+  skip_before_filter :verify_user
+
 
   ##
   # == POST /api/v1/register

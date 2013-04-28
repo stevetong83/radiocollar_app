@@ -1,6 +1,5 @@
 class Api::V1::SessionsController < Api::V1::ApiController
-  skip_before_filter :authenticate_user!, only: :create
- 
+  skip_before_filter :verify_user, only: :create
   ##
   # == POST /api/v1/sessions
   # Authenticate the user and return back authentication token if successful login
@@ -34,8 +33,7 @@ class Api::V1::SessionsController < Api::V1::ApiController
   #   message: Session deleted
 
   def destroy
-    user = User.where(authentication_token: params[:authentication_token]).first
-    user.reset_authentication_token!
+    @user.reset_authentication_token!
     render json: { message: "Logged out successfully" },  success: true, status: :ok
   end
  

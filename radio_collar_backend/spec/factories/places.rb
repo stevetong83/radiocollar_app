@@ -1,9 +1,8 @@
-# Read about factories at https://github.com/thoughtbot/factory_girl
-
 FactoryGirl.define do
   factory :place do
-    name "MyString"
-    lat "MyString"
-    long "MyString"
+    name "Test Location"
+    lat "124"
+    long "1234"
+    association :user
   end
 end
