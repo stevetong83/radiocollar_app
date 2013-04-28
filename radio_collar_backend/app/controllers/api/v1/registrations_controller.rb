@@ -1,23 +1,50 @@
-class Api::V1::RegistrationsController < Devise::RegistrationsController
-  skip_before_filter :verify_authenticity_token,
-                     :if => Proc.new { |c| c.request.format == 'application/json' }
+class Api::V1::RegistrationsController < Api::V1::ApiController
+  # skip_before_filter :authenticate_user!, only: :create
+  # skip_before_filter :verify_authenticity_token,  only: :create
 
-  respond_to :json
-
+  ##
+  # == POST /api/v1/register
+  # Authenticate the user and return back authentication token if successful login
+  # [Required POST VARS]
+  #   email::
+  #   password::
+  # === Success
+  # [200] OK
+  # === Failure
+  # [422] 
+  
   def create
-    build_resource
-    if resource.save
-      sign_in resource
-      render :status => 200,
-           :json => { :success => true,
-                      :info => "Registered",
-                      :data => { :user => resource,
-                                 :auth_token => current_user.authentication_token } }
+    user = User.new(email: params[:email], password: params[:password])
+
+    if user.save
+      render json: {authentication_token: user.authentication_token}, success: true, status: :ok
     else
-      render :status => :unprocessable_entity,
-             :json => { :success => false,
-                        :info => resource.errors,
-                        :data => {} }
+      warden.custom_failure!
+      render json: user.errors, success: false, status: 422
     end
   end
+
+  ##
+  # == POST /api/v1/reset_password
+  # Check for existing user and send reset password email if valid
+  # [Required POST VARS]
+  #   email::
+  # === Success
+  # [200] OK
+  # === Failure
+  # [422] 
+  #   message: No such email
+
+  def reset_password
+    user = User.find_for_database_authentication(email: params[:email])
+
+    if user.present?
+      user.send_reset_password_instructions
+      # render json: success: true, status: :ok
+    else
+      render json: {message: "No such email"}, success: false, status: 422
+    end
+
+  end
+
 end
