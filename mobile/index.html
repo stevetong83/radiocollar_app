@@ -13,6 +13,7 @@
     <script src="js/jquery.js"></script>
     <script src="js/application.js"></script>
     <script src="js/theatre.js"></script>
+    <script src='src/navigator.js'></script>
 
   </head>
   <body>
@@ -33,13 +34,16 @@
   <div id="back_stage">
     <div id="scene1">
       <div class="btn-group">
-      <a href="#" onClick="nav.perform('#send');" class='btn'> Send Your Location</a>
-      <a href="#" onClick="nav.perform('#send');" class='btn'>Send Saved Location</a>
-      <a href="#" onClick="nav.perform('#send');" class='btn'>View Past Waypoints</a>
+        <ul class="nav-list">
+          <li><a href="#" onClick="nav.perform('#send-current');" class='btn'> Send Current Location</a></li>
+          <li><a href="#" onClick="nav.perform('#send-saved');" class='btn'>Send Saved Location</a></li>
+          <li><a href="#" onClick="nav.perform('#edit');" class='btn'>Edit Your Waypoints</a></li>
+      
+        </ul>
       </div>
     </div>
 
-<div id="send">
+<div id="send-current">
   <h1>Send a waypoint</h1>
   <p><strong>Status:</strong> <span id="status">Loading GPS...</span></p>
   <form class="gpsControls">
@@ -54,7 +58,31 @@
   <a href="#" onClick="nav.goBack();" class= 'btn'>Back</a>
 </div>
 
-  </div>
+<div id="send-saved">
+  <select class='saved-selection' size='10'>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select>
+  <p>
+    <a href="#" class="btn" id="send">Send</a>
+  <a href="#" onClick="nav.goBack();" class= 'btn'>Back</a></p>
+</div>
+
+<div id="edit">
+  <select class='saved-selection' size='10'>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select>
+  <p>
+    <a href="#" class="btn" id="send">Delete</a>
+  <a href="#" onClick="nav.goBack();" class= 'btn'>Back</a></p>
+</div>
+
+</div>
 
   </body>
 </html>
