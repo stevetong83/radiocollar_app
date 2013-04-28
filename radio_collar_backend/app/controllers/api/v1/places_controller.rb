@@ -1,4 +1,4 @@
-class ApiV1::PlacesController < ApplicationController
+class ApiV1::PlacesController < Api::V1::ApiController
 
   def index
     @places = current_user.places.all

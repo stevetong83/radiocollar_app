@@ -14,15 +14,8 @@ class Api::V1::RegistrationsController < Api::V1::ApiController
   # [422] 
   
   def create
-    user = User.find_for_database_authentication(email: params[:email])
+    user = User.new(email: params[:email], password: params[:password])
 
-    if user.nil?
-      user = User.new(email: params[:email], password: params[:password])
-    elsif user.invitation_sent_at.present? && user.invitation_accepted_at.nil?
-      user.update_attributes(password: params[:password], invitation_accepted_at: DateTime.now)
-    else
-      user = User.new(email: params[:email], password: params[:password])
-    end
     if user.save
       render json: {authentication_token: user.authentication_token}, success: true, status: :ok
     else
@@ -47,7 +40,7 @@ class Api::V1::RegistrationsController < Api::V1::ApiController
 
     if user.present?
       user.send_reset_password_instructions
-      render json: success: true, status: :ok
+      # render json: success: true, status: :ok
     else
       render json: {message: "No such email"}, success: false, status: 422
     end
