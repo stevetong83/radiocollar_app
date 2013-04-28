@@ -1,22 +1,48 @@
-class ApiV1::PlacesController < Api::V1::ApiController
+class Api::V1::PlacesController < Api::V1::ApiController
+  # skip_before_filter :authenticate_user!
 
   def index
-    @places = current_user.places.all
+    places = @user.places.all
+    render json: places.to_json
   end
+
+  ##
+  # == POST /api/v1/places
+  # Authenticate the user and save location
+  # [Required POST VARS]
+  #   authentication_token::
+  #   name::
+  #   lat::
+  #   long::
+  # === Success
+  # [200] OK
+  # === Failure
+  # [420] User must be logged in
+  # [422] Invalid params
 
   def create
-
+    place = @user.places.build(name: params[:name], lat: params[:lat], long: params[:long])
+    if place.save
+      render json: {message: "Place has been deleted"}, success: true, status: 200
+    else
+      render json: place.errors, success: false, status: 422
+    end
   end
 
+  ##
+  # == POST /api/v1/places/:id
+  # Authenticate the user and save location
   def show
-
+    place = Place.find params[:id]
+    render json: place.to_json
   end
 
-  def update
-
-  end
-
+  ##
+  # == DELETE /api/v1/places/:id
+  # Authenticate the user and save location
   def destroy
-
+    place = Place.find params[:id]
+    place.destroy
+    render json: {message: "Place has been deleted"}, success: true, status: 200
   end
 end

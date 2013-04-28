@@ -8,7 +8,7 @@ RadioCollarBackend::Application.routes.draw do
         post 'login', to: 'sessions#create'
         delete 'logout', to: 'sessions#destroy'
       end
-      resources :events
+      resources :places
     end
   end
 

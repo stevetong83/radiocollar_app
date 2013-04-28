@@ -33,7 +33,5 @@ describe "Mobile Registration" do
       it {response.status.should eq 422}
       it {response.should_not be_success}
     end
-
-
   end
 end
