@@ -22,9 +22,8 @@
       if (firstScene != null) {
         this.scene = $(firstScene);
       }
-      if (firstScene != null) {
-        this.render(firstScene);
-      }
+      this.stage.empty();
+      this.stage.html($(firstScene).html());
     }
 
     Theatre.prototype.goBack = function() {
@@ -32,7 +31,7 @@
       back = this.sceneHistory.length - 1;
       previousScene = this.sceneHistory[back];
       this.scene = $(previousScene);
-      this.render(previousScene);
+      this._render(previousScene);
       return this.sceneHistory.pop();
     };
 
@@ -41,12 +40,15 @@
         this.sceneHistory = this.sceneHistory.concat(this.scene.selector);
       }
       this.scene = $(scene);
-      return this.render(scene);
+      return this._render(scene);
     };
 
-    Theatre.prototype.render = function(scene) {
-      this.stage.empty();
-      return this.stage.html($(scene).html());
+    Theatre.prototype._render = function(scene) {
+      var _this = this;
+      return this.stage.fadeOut(200, function() {
+        _this.stage.hide();
+        return _this.stage.html($(scene).html()).fadeIn(200);
+      });
     };
 
     return Theatre;
@@ -54,18 +56,9 @@
   })();
 
   $(function() {
-    var radioCollar;
-    radioCollar = new Theatre({
-      firstScene: '#scene3'
-    });
-    $('#back').click(function() {
-      return radioCollar.goBack();
-    });
-    $('#second').click(function() {
-      return radioCollar.perform('#scene2');
-    });
-    return $('#first').click(function() {
-      return radioCollar.perform('#scene1');
+    return window.nav = new Theatre({
+      stage: '#content',
+      firstScene: '#scene1'
     });
   });
 
