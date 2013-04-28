@@ -8,29 +8,29 @@ class Theatre
     @stage         = $(stage)
     @sceneHistory  = []
     @scene         = $(firstScene) if firstScene?
-    @render firstScene if firstScene?
+    @stage.empty()
+    @stage.html($(firstScene).html())
 
   goBack: ->
     back          = @sceneHistory.length - 1
     previousScene = @sceneHistory[back] 
     @scene        = $(previousScene)
-    @render previousScene
+    @_render previousScene
     @sceneHistory.pop()
 
   perform: (scene) ->
     @sceneHistory = @sceneHistory.concat(@scene.selector) if @scene
     @scene = $(scene)
-    @render scene
+    @_render scene
 
-  render: (scene) ->
-    @stage.empty()
-    @stage.html($(scene).html())
+  _render: (scene) ->
+    @stage.fadeOut 200, =>
+      @stage.hide()
+      @stage.html($(scene).html()).fadeIn(200)
+
+  #TODO: Add support for:
+    #state saving
+    #underscore templates
 
 $ ->
-  radioCollar = new Theatre {firstScene: '#scene3'}
-  $('#back').click ->
-    radioCollar.goBack()
-  $('#second').click ->
-    radioCollar.perform('#scene2')
-  $('#first').click ->
-    radioCollar.perform('#scene1')
+  window.nav = new Theatre {stage: '#content',firstScene: '#scene1'}

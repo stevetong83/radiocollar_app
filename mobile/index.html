@@ -12,26 +12,36 @@
     <script src="js/underscore.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/application.js"></script>
+    <script src="src/theatre.js"></script>
 
   </head>
   <body>
     <div id="wrapper">
+
       <div id="header">
         Radiocollar
       </div>
-      <div id="content">
-        <div class="btn-menu">
-          Send Current Location
-        </div>
-        <div class="btn-menu">
-          Send Saved Location
-        </div>
+
+      <div class='main' id="content">
+        loading
       </div>
-      <div id="footer">
-        <div class="btn">
-          button
-        </div>
-      </div>
+
     </div>
+
+  <div id="back_stage">
+    <div id="scene1">
+      <h1>Menu</h1>
+      <a href="#" onClick="nav.perform('#send');" class='btn'>Send Your Location</a>
+    </div>
+    <div id="send">
+      <h1>Send</h1>
+      This is the send menu.
+      <a href="#" onClick="nav.goBack();" class= 'btn'> Go Back</a>
+    </div>
+    <div id="scene3">
+      Third
+    </div>
+  </div>
+
   </body>
 </html>
