@@ -66,4 +66,12 @@
 
   window.compass = new Compass();
 
+  $(function() {
+    return setInterval(function() {
+      var message;
+      message = "LAT: " + compass.lat + " LNG: " + compass.lng + " ALT: " + compass.alt + " ACC: " + compass.acc + " ALTACC: " + compass.altacc + " HDG: " + compass.hdg + " SPD: " + compass.spd + " ";
+      return $('#info').text(message);
+    }, 1000);
+  });
+
 }).call(this);
