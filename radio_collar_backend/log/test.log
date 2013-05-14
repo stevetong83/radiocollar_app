@@ -3533,3 +3533,860 @@ Completed 200 OK in 923ms (Views: 0.2ms)
   MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.2968ms)
   MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0603ms)
   MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0470ms)
+Started POST "/api/v1/register" for 127.0.0.1 at 2013-05-09 15:45:41 -0700
+Processing by Api::V1::RegistrationsController#create as HTML
+  Parameters: {"email"=>"someone1@example.com", "password"=>"[FILTERED]", "registration"=>{"email"=>"someone1@example.com", "password"=>"[FILTERED]"}}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.5240ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.2889ms)
+Completed 500 Internal Server Error in 8ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.0922ms)
+Started POST "/api/v1/register" for 127.0.0.1 at 2013-05-09 15:45:41 -0700
+Processing by Api::V1::RegistrationsController#create as HTML
+  Parameters: {"email"=>"someone2@example.com", "password"=>"[FILTERED]", "registration"=>{"email"=>"someone2@example.com", "password"=>"[FILTERED]"}}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.6568ms)
+Completed 500 Internal Server Error in 4ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7617ms)
+Started POST "/api/v1/register" for 127.0.0.1 at 2013-05-09 15:45:41 -0700
+Processing by Api::V1::RegistrationsController#create as HTML
+  Parameters: {"email"=>"someone3@example.com", "password"=>"[FILTERED]", "registration"=>{"email"=>"someone3@example.com", "password"=>"[FILTERED]"}}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.5509ms)
+Completed 500 Internal Server Error in 4ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.8149ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (31.6720ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.8872ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.0831ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5870ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.1351ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5722ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.0028ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6080ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.0970ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6220ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.1470ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5720ms)
+Started POST "/api/v1/login" for 127.0.0.1 at 2013-05-09 15:45:41 -0700
+Processing by Api::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"new@email.com", "password"=>"[FILTERED]", "session"=>{"email"=>"new@email.com", "password"=>"[FILTERED]"}}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.2610ms)
+Completed 500 Internal Server Error in 4ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.8252ms)
+Started POST "/api/v1/login" for 127.0.0.1 at 2013-05-09 15:45:41 -0700
+Processing by Api::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"new@email.com", "password"=>"[FILTERED]", "session"=>{"email"=>"new@email.com", "password"=>"[FILTERED]"}}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.2648ms)
+Completed 500 Internal Server Error in 2ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.9511ms)
+Started POST "/api/v1/login" for 127.0.0.1 at 2013-05-09 15:45:41 -0700
+Processing by Api::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"new@email.com", "password"=>"[FILTERED]", "session"=>{"email"=>"new@email.com", "password"=>"[FILTERED]"}}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.0948ms)
+Completed 500 Internal Server Error in 2ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.8299ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.1411ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.8230ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.1511ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6590ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.0118ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5970ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.1232ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6199ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.2519ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7439ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (33.7160ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7520ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.1237ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6182ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.2290ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6208ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.1899ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5801ms)
+Started POST "/api/v1/login" for 127.0.0.1 at 2013-05-09 15:45:41 -0700
+Processing by Api::V1::SessionsController#create as HTML
+  Parameters: {"session"=>{}}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.2329ms)
+Completed 500 Internal Server Error in 2ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.8521ms)
+Started POST "/api/v1/login" for 127.0.0.1 at 2013-05-09 15:45:41 -0700
+Processing by Api::V1::SessionsController#create as HTML
+  Parameters: {"session"=>{}}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.2453ms)
+Completed 500 Internal Server Error in 2ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7529ms)
+Started POST "/api/v1/login" for 127.0.0.1 at 2013-05-09 15:45:41 -0700
+Processing by Api::V1::SessionsController#create as HTML
+  Parameters: {"session"=>{}}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.2152ms)
+Completed 500 Internal Server Error in 2ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.8290ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.9339ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6449ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.2140ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5529ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.0600ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5510ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.9563ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6471ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.8759ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.8152ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.0920ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6530ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.7610ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone1@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (7.7469ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"ntMd54bSU13pohN6Lzbb"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (3.9020ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"518c2730df86c0cbb7000001", "email"=>"someone1@example.com", "encrypted_password"=>"$2a$04$4v7zkyzYW1b7JLh8rxYQtuEX9k3jcqOlN5cjrdHnfUG9X/C.OISw.", "sign_in_count"=>0, "authentication_token"=>"ntMd54bSU13pohN6Lzbb", "updated_at"=>2013-05-09 22:46:08 UTC, "created_at"=>2013-05-09 22:46:08 UTC}] flags=[] (0.1538ms)
+Started POST "/api/v1/register" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::RegistrationsController#create as HTML
+  Parameters: {"email"=>"someone1@example.com", "password"=>"[FILTERED]", "registration"=>{"email"=>"someone1@example.com", "password"=>"[FILTERED]"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone1@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.5140ms)
+Completed 422 Unprocessable Entity in 16ms (Views: 0.3ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4733ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0751ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0479ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone2@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.4568ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"Yv4x7cCSJrFnEPJihNWL"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3309ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"518c2730df86c0cbb7000002", "email"=>"someone2@example.com", "encrypted_password"=>"$2a$04$f4Teg/4da5f3BBlJqD5/tOniMJFYE04UES2F58xITgqMreHX2d9f6", "sign_in_count"=>0, "authentication_token"=>"Yv4x7cCSJrFnEPJihNWL", "updated_at"=>2013-05-09 22:46:08 UTC, "created_at"=>2013-05-09 22:46:08 UTC}] flags=[] (0.0961ms)
+Started POST "/api/v1/register" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::RegistrationsController#create as HTML
+  Parameters: {"email"=>"someone2@example.com", "password"=>"[FILTERED]", "registration"=>{"email"=>"someone2@example.com", "password"=>"[FILTERED]"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone2@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3321ms)
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_test command={:count=>"users", :query=>{}} (0.2728ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.3650ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0520ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0541ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone3@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3879ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"gyyiq9io6ygTunX3ZtQg"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3982ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"518c2730df86c0cbb7000003", "email"=>"someone3@example.com", "encrypted_password"=>"$2a$04$T1P2H/JTfKRDkiR/2HxgyOUy74uRDDH5zdYSo3xfS6pvdfbF2ISXi", "sign_in_count"=>0, "authentication_token"=>"gyyiq9io6ygTunX3ZtQg", "updated_at"=>2013-05-09 22:46:08 UTC, "created_at"=>2013-05-09 22:46:08 UTC}] flags=[] (0.0899ms)
+Started POST "/api/v1/register" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::RegistrationsController#create as HTML
+  Parameters: {"email"=>"someone3@example.com", "password"=>"[FILTERED]", "registration"=>{"email"=>"someone3@example.com", "password"=>"[FILTERED]"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone3@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.5062ms)
+Completed 422 Unprocessable Entity in 4ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4091ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0508ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0613ms)
+Started POST "/api/v1/register" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::RegistrationsController#create as HTML
+  Parameters: {"email"=>"someone4@example.com", "password"=>"[FILTERED]", "registration"=>{"email"=>"someone4@example.com", "password"=>"[FILTERED]"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone4@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3209ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"84kzhe3EM5pQ5xtEqBL1"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3390ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"518c2730df86c0cbb7000004", "email"=>"someone4@example.com", "encrypted_password"=>"$2a$04$tFFyujAAdjp6aBOMz3sCxO51ZOZPWGtK0DIwTrtIiaTTwxR0Jnn3m", "sign_in_count"=>0, "authentication_token"=>"84kzhe3EM5pQ5xtEqBL1", "updated_at"=>2013-05-09 22:46:08 UTC, "created_at"=>2013-05-09 22:46:08 UTC}] flags=[] (0.0918ms)
+Completed 200 OK in 5ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4961ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0551ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0439ms)
+Started POST "/api/v1/register" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::RegistrationsController#create as HTML
+  Parameters: {"email"=>"someone5@example.com", "password"=>"[FILTERED]", "registration"=>{"email"=>"someone5@example.com", "password"=>"[FILTERED]"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone5@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3262ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"HvsF3THisj5C3AWgfX6V"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3231ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"518c2730df86c0cbb7000005", "email"=>"someone5@example.com", "encrypted_password"=>"$2a$04$2sLe5NL/SG3F8oezFirD2.rYH0YruEdR2FcpXqJcA7kduP6Xrilc2", "sign_in_count"=>0, "authentication_token"=>"HvsF3THisj5C3AWgfX6V", "updated_at"=>2013-05-09 22:46:08 UTC, "created_at"=>2013-05-09 22:46:08 UTC}] flags=[] (0.0880ms)
+Completed 200 OK in 4ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_test command={:count=>"users", :query=>{}} (0.3440ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4349ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0629ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0458ms)
+Started POST "/api/v1/register" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::RegistrationsController#create as HTML
+  Parameters: {"email"=>"someone6@example.com", "password"=>"[FILTERED]", "registration"=>{"email"=>"someone6@example.com", "password"=>"[FILTERED]"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone6@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2761ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"6rXHa5tCuZ9w66QhP26g"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3960ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"518c2730df86c0cbb7000006", "email"=>"someone6@example.com", "encrypted_password"=>"$2a$04$JFsYyMrPstJLDeEleUXyD.21wBn.62dUdZ2/bc7gAR1Mc3lPnIxmy", "sign_in_count"=>0, "authentication_token"=>"6rXHa5tCuZ9w66QhP26g", "updated_at"=>2013-05-09 22:46:08 UTC, "created_at"=>2013-05-09 22:46:08 UTC}] flags=[] (0.0970ms)
+Completed 200 OK in 4ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4909ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0572ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0460ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone7@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3250ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"BBBz6xGPidokQMWEc9Fp"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2210ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"518c2730df86c0cbb7000007", "email"=>"someone7@example.com", "encrypted_password"=>"$2a$04$b4OK6HyyJNWabGFH2IjjWu8.P6u.XzXMot5uIfToKTm60M.B687LO", "sign_in_count"=>0, "authentication_token"=>"BBBz6xGPidokQMWEc9Fp", "updated_at"=>2013-05-09 22:46:08 UTC, "created_at"=>2013-05-09 22:46:08 UTC}] flags=[] (0.0820ms)
+Started POST "/api/v1/places" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::PlacesController#create as HTML
+  Parameters: {"authentication_token"=>"BBBz6xGPidokQMWEc9Fp", "name"=>"home", "lat"=>"1.1", "long"=>"1.1", "place"=>{"name"=>"home", "lat"=>"1.1", "long"=>"1.1"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"BBBz6xGPidokQMWEc9Fp"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.5031ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=places documents=[{"_id"=>"518c2730df86c0cbb7000008", "name"=>"home", "lat"=>"1.1", "long"=>"1.1", "user_id"=>"518c2730df86c0cbb7000007", "updated_at"=>2013-05-09 22:46:08 UTC, "created_at"=>2013-05-09 22:46:08 UTC}] flags=[] (0.1483ms)
+Completed 200 OK in 36ms (Views: 0.2ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_test command={:count=>"places", :query=>{}} (0.8340ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4349ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0570ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0429ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone8@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2880ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"BHvmkoqzi31ejTi9ghei"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2711ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"518c2730df86c0cbb7000009", "email"=>"someone8@example.com", "encrypted_password"=>"$2a$04$6IVG9.R/mFEDdHmUPvLCY.SXK7UShiiMhY.YMm1Bt7gNU/rzqbKVK", "sign_in_count"=>0, "authentication_token"=>"BHvmkoqzi31ejTi9ghei", "updated_at"=>2013-05-09 22:46:08 UTC, "created_at"=>2013-05-09 22:46:08 UTC}] flags=[] (0.0877ms)
+Started POST "/api/v1/places" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::PlacesController#create as HTML
+  Parameters: {"authentication_token"=>"BHvmkoqzi31ejTi9ghei", "name"=>"home", "lat"=>"1.1", "long"=>"1.1", "place"=>{"name"=>"home", "lat"=>"1.1", "long"=>"1.1"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"BHvmkoqzi31ejTi9ghei"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.4511ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=places documents=[{"_id"=>"518c2730df86c0cbb700000a", "name"=>"home", "lat"=>"1.1", "long"=>"1.1", "user_id"=>"518c2730df86c0cbb7000009", "updated_at"=>2013-05-09 22:46:08 UTC, "created_at"=>2013-05-09 22:46:08 UTC}] flags=[] (0.0801ms)
+Completed 200 OK in 2ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4141ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0529ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0520ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone9@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3281ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"2NvV1LQi6oixEhwLMVx3"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3130ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"518c2730df86c0cbb700000b", "email"=>"someone9@example.com", "encrypted_password"=>"$2a$04$X5XwZPa3R6K2izDvQpGYAu0sCi8od0JwmHk6n9fgnwNQxqXd4gE4.", "sign_in_count"=>0, "authentication_token"=>"2NvV1LQi6oixEhwLMVx3", "updated_at"=>2013-05-09 22:46:08 UTC, "created_at"=>2013-05-09 22:46:08 UTC}] flags=[] (0.0820ms)
+Started GET "/api/v1/places?authentication_token=2NvV1LQi6oixEhwLMVx3" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::PlacesController#index as HTML
+  Parameters: {"authentication_token"=>"2NvV1LQi6oixEhwLMVx3"}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"2NvV1LQi6oixEhwLMVx3"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.9873ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=places selector={"user_id"=>"518c2730df86c0cbb700000b"} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.3359ms)
+Completed 200 OK in 3ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4170ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0589ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0641ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone10@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3581ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"EHwqNABLCpuyFRQqiYMp"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3042ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"518c2730df86c0cbb700000c", "email"=>"someone10@example.com", "encrypted_password"=>"$2a$04$48ZccpUrKrRjiMNtQ2BEnOMV1SL7cASiHJCBgIW1SGLfZ2AtCLVUq", "sign_in_count"=>0, "authentication_token"=>"EHwqNABLCpuyFRQqiYMp", "updated_at"=>2013-05-09 22:46:08 UTC, "created_at"=>2013-05-09 22:46:08 UTC}] flags=[] (0.0920ms)
+Started DELETE "/api/v1/logout" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::SessionsController#destroy as HTML
+  Parameters: {"authentication_token"=>"EHwqNABLCpuyFRQqiYMp", "session"=>{"authentication_token"=>"EHwqNABLCpuyFRQqiYMp"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"EHwqNABLCpuyFRQqiYMp"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.4780ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"yxJ1HJuTWr5bQjUzqHMh"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2902ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=radio_collar_test collection=users selector={"_id"=>"518c2730df86c0cbb700000c"} update={"$set"=>{"authentication_token"=>"yxJ1HJuTWr5bQjUzqHMh", "updated_at"=>2013-05-09 22:46:08 UTC}} flags=[] (0.1180ms)
+Completed 200 OK in 3ms (Views: 0.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4649ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0620ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0479ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone11@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3603ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"h9g2yD5JZoGBQAn1fEEu"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3190ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"518c2730df86c0cbb700000d", "email"=>"someone11@example.com", "encrypted_password"=>"$2a$04$PivTVuTAN8ZAPTlmjkqBfOHvebqu9DejLTfC4EB1J9AecVouLvfmu", "sign_in_count"=>0, "authentication_token"=>"h9g2yD5JZoGBQAn1fEEu", "updated_at"=>2013-05-09 22:46:08 UTC, "created_at"=>2013-05-09 22:46:08 UTC}] flags=[] (0.0911ms)
+Started DELETE "/api/v1/logout" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::SessionsController#destroy as HTML
+  Parameters: {"authentication_token"=>"h9g2yD5JZoGBQAn1fEEu", "session"=>{"authentication_token"=>"h9g2yD5JZoGBQAn1fEEu"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"h9g2yD5JZoGBQAn1fEEu"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.5398ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"YyQNr2E365fH1BY5YmXm"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3572ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=radio_collar_test collection=users selector={"_id"=>"518c2730df86c0cbb700000d"} update={"$set"=>{"authentication_token"=>"YyQNr2E365fH1BY5YmXm", "updated_at"=>2013-05-09 22:46:08 UTC}} flags=[] (0.0744ms)
+Completed 200 OK in 2ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4451ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0510ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0589ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone12@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2842ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"DzdPYn1kyS3rDAy4Kxjz"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3209ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"518c2730df86c0cbb700000e", "email"=>"someone12@example.com", "encrypted_password"=>"$2a$04$jfJR8xokniK1xhqUyM92ZeTyFQnIw8t9YaKPgNVGN3Wb.p..Rvm6W", "sign_in_count"=>0, "authentication_token"=>"DzdPYn1kyS3rDAy4Kxjz", "updated_at"=>2013-05-09 22:46:08 UTC, "created_at"=>2013-05-09 22:46:08 UTC}] flags=[] (0.0908ms)
+Started DELETE "/api/v1/logout" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::SessionsController#destroy as HTML
+  Parameters: {"authentication_token"=>"DzdPYn1kyS3rDAy4Kxjz", "session"=>{"authentication_token"=>"DzdPYn1kyS3rDAy4Kxjz"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"DzdPYn1kyS3rDAy4Kxjz"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.4790ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"mkBx2CePRuHVxpHP4tC7"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3619ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=radio_collar_test collection=users selector={"_id"=>"518c2730df86c0cbb700000e"} update={"$set"=>{"authentication_token"=>"mkBx2CePRuHVxpHP4tC7", "updated_at"=>2013-05-09 22:46:08 UTC}} flags=[] (0.0722ms)
+Completed 200 OK in 2ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4463ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0570ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0629ms)
+Started POST "/api/v1/login" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::SessionsController#create as HTML
+  Parameters: {"session"=>{}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"email"=>""}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3691ms)
+Completed 401 Unauthorized in 3ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.3269ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0460ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0420ms)
+Started POST "/api/v1/login" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::SessionsController#create as HTML
+  Parameters: {"session"=>{}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"email"=>""}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3691ms)
+Completed 401 Unauthorized in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.3219ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0498ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0720ms)
+Started POST "/api/v1/login" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::SessionsController#create as HTML
+  Parameters: {"session"=>{}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"email"=>""}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3588ms)
+Completed 401 Unauthorized in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4580ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0558ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0458ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone13@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3321ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"b9cgyYc7MnXFAofqZ7x2"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3421ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"518c2730df86c0cbb700000f", "email"=>"someone13@example.com", "encrypted_password"=>"$2a$04$bOQFazyD01wB1qBLgaT1Fe7nkTvsum0/2qfgHg0KeOoVP1JwHQG/.", "sign_in_count"=>0, "authentication_token"=>"b9cgyYc7MnXFAofqZ7x2", "updated_at"=>2013-05-09 22:46:08 UTC, "created_at"=>2013-05-09 22:46:08 UTC}] flags=[] (0.0982ms)
+Started POST "/api/v1/login" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"someone13@example.com", "session"=>{"email"=>"someone13@example.com"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"email"=>"someone13@example.com"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.5190ms)
+Completed 401 Unauthorized in 3ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.3879ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0529ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0470ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone14@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2520ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"yuofpm5pqfpbZvg3q7cY"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3541ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"518c2730df86c0cbb7000010", "email"=>"someone14@example.com", "encrypted_password"=>"$2a$04$3.7lWcFRfVNLo4irr/RoOO6Rjlh.v3b7NcHHZR6ro2M0Y6rkIYnUO", "sign_in_count"=>0, "authentication_token"=>"yuofpm5pqfpbZvg3q7cY", "updated_at"=>2013-05-09 22:46:08 UTC, "created_at"=>2013-05-09 22:46:08 UTC}] flags=[] (0.1011ms)
+Started POST "/api/v1/login" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"someone14@example.com", "session"=>{"email"=>"someone14@example.com"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"email"=>"someone14@example.com"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.4370ms)
+Completed 401 Unauthorized in 3ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.3037ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0699ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0432ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone15@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2582ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"DpYqwQu6e7myV7zCpdbf"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2317ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"518c2730df86c0cbb7000011", "email"=>"someone15@example.com", "encrypted_password"=>"$2a$04$6ruqr5k4XGBSxbp1q6IJ8Okg75S/WhiUdsYNy1xR3BLm6igQ1fmOS", "sign_in_count"=>0, "authentication_token"=>"DpYqwQu6e7myV7zCpdbf", "updated_at"=>2013-05-09 22:46:08 UTC, "created_at"=>2013-05-09 22:46:08 UTC}] flags=[] (0.1140ms)
+Started POST "/api/v1/login" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"someone15@example.com", "session"=>{"email"=>"someone15@example.com"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"email"=>"someone15@example.com"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.4590ms)
+Completed 401 Unauthorized in 3ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.3650ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0482ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0460ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone16@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3483ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"sjvxKPDA293Wd7r6Jp6n"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2592ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"518c2730df86c0cbb7000012", "email"=>"someone16@example.com", "encrypted_password"=>"$2a$04$n8vObSKsuD9ueMS4iRwKfeFx.WRlMrhPUMLbBLgASGqd7TRyIYWri", "sign_in_count"=>0, "authentication_token"=>"sjvxKPDA293Wd7r6Jp6n", "updated_at"=>2013-05-09 22:46:08 UTC, "created_at"=>2013-05-09 22:46:08 UTC}] flags=[] (0.0920ms)
+Started POST "/api/v1/login" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"someone16@example.com", "password"=>"[FILTERED]", "session"=>{"email"=>"someone16@example.com", "password"=>"[FILTERED]"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"email"=>"someone16@example.com"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.4840ms)
+Completed 200 OK in 3ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.3889ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0577ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0429ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone17@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3834ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"nTF6sqGuD7SMzmqiRQc4"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3912ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"518c2730df86c0cbb7000013", "email"=>"someone17@example.com", "encrypted_password"=>"$2a$04$.nNCWjurknQiG/b1ak744.GluNzLWoOA1/E9pTpZzQCvpVLeLUw0y", "sign_in_count"=>0, "authentication_token"=>"nTF6sqGuD7SMzmqiRQc4", "updated_at"=>2013-05-09 22:46:08 UTC, "created_at"=>2013-05-09 22:46:08 UTC}] flags=[] (0.1192ms)
+Started POST "/api/v1/login" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"someone17@example.com", "password"=>"[FILTERED]", "session"=>{"email"=>"someone17@example.com", "password"=>"[FILTERED]"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"email"=>"someone17@example.com"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.5159ms)
+Completed 200 OK in 3ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4201ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0520ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0441ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone18@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3688ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"KrZFmFVYWmNryZJqTspD"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2770ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"518c2730df86c0cbb7000014", "email"=>"someone18@example.com", "encrypted_password"=>"$2a$04$371zS8u/3ow1UdfiHjQgI.Xpu7Mo7pm/u6aRGwCgwjOr9auOZzENy", "sign_in_count"=>0, "authentication_token"=>"KrZFmFVYWmNryZJqTspD", "updated_at"=>2013-05-09 22:46:08 UTC, "created_at"=>2013-05-09 22:46:08 UTC}] flags=[] (0.0980ms)
+Started POST "/api/v1/login" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"someone18@example.com", "password"=>"[FILTERED]", "session"=>{"email"=>"someone18@example.com", "password"=>"[FILTERED]"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"email"=>"someone18@example.com"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.4542ms)
+Completed 200 OK in 3ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4022ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0522ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0482ms)
+Started POST "/api/v1/login" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"new@email.com", "password"=>"[FILTERED]", "session"=>{"email"=>"new@email.com", "password"=>"[FILTERED]"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"email"=>"new@email.com"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3710ms)
+Completed 401 Unauthorized in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.3269ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0451ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0429ms)
+Started POST "/api/v1/login" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"new@email.com", "password"=>"[FILTERED]", "session"=>{"email"=>"new@email.com", "password"=>"[FILTERED]"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"email"=>"new@email.com"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3648ms)
+Completed 401 Unauthorized in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.3190ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0482ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0513ms)
+Started POST "/api/v1/login" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"new@email.com", "password"=>"[FILTERED]", "session"=>{"email"=>"new@email.com", "password"=>"[FILTERED]"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"email"=>"new@email.com"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2799ms)
+Completed 401 Unauthorized in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.3662ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0448ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0420ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone19@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2429ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"niKwtuUyPCB1up3VyQys"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2589ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"518c2730df86c0cbb7000015", "email"=>"someone19@example.com", "encrypted_password"=>"$2a$04$c0RW4OlC496h/qZt.Z8JgeDZ7k21B7WLvTNodchZ29bH28EKN93xm", "sign_in_count"=>0, "authentication_token"=>"niKwtuUyPCB1up3VyQys", "updated_at"=>2013-05-09 22:46:08 UTC, "created_at"=>2013-05-09 22:46:08 UTC}] flags=[] (0.0970ms)
+Started POST "/api/v1/login" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"someone19@example.com", "password"=>"[FILTERED]", "session"=>{"email"=>"someone19@example.com", "password"=>"[FILTERED]"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"email"=>"someone19@example.com"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.4141ms)
+Completed 401 Unauthorized in 3ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4227ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0560ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0620ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone20@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3560ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"tgfcf5rbyTy1tzbUP3WW"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3209ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"518c2730df86c0cbb7000016", "email"=>"someone20@example.com", "encrypted_password"=>"$2a$04$98VsCVGjV2K4dxCOZoQK0eYvVLb85oQQGIDhJfDRhu0fMfw47Atqy", "sign_in_count"=>0, "authentication_token"=>"tgfcf5rbyTy1tzbUP3WW", "updated_at"=>2013-05-09 22:46:08 UTC, "created_at"=>2013-05-09 22:46:08 UTC}] flags=[] (0.0870ms)
+Started POST "/api/v1/login" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"someone20@example.com", "password"=>"[FILTERED]", "session"=>{"email"=>"someone20@example.com", "password"=>"[FILTERED]"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"email"=>"someone20@example.com"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3650ms)
+Completed 401 Unauthorized in 2ms (Views: 0.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.3750ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0598ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0701ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone21@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3099ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"NAqffYVxAYHz9esMwZcY"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3099ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"518c2730df86c0cbb7000017", "email"=>"someone21@example.com", "encrypted_password"=>"$2a$04$Sxe.1CswsYvAkDBr1Ny4o.JHOvtqIzS/BPPzq93wOqjPKOyp7SqP6", "sign_in_count"=>0, "authentication_token"=>"NAqffYVxAYHz9esMwZcY", "updated_at"=>2013-05-09 22:46:08 UTC, "created_at"=>2013-05-09 22:46:08 UTC}] flags=[] (0.0901ms)
+Started POST "/api/v1/login" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"someone21@example.com", "password"=>"[FILTERED]", "session"=>{"email"=>"someone21@example.com", "password"=>"[FILTERED]"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"email"=>"someone21@example.com"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.5150ms)
+Completed 401 Unauthorized in 3ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4120ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0539ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0579ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone22@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3059ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"MubVSMmKEK1LayiKxVec"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2708ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"518c2730df86c0cbb7000018", "email"=>"someone22@example.com", "encrypted_password"=>"$2a$04$m7VlY7kbGq2lDFuUNMd0GeouTVPcPrLWLXOMBMKg9.YnOnu0RTiBu", "sign_in_count"=>0, "authentication_token"=>"MubVSMmKEK1LayiKxVec", "updated_at"=>2013-05-09 22:46:08 UTC, "created_at"=>2013-05-09 22:46:08 UTC}] flags=[] (0.0927ms)
+Started POST "/api/v1/login" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::SessionsController#create as HTML
+  Parameters: {"password"=>"[FILTERED]", "session"=>{"password"=>"[FILTERED]"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"email"=>""}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3850ms)
+Completed 401 Unauthorized in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.3500ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0579ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0467ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone23@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3090ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"JWTy3e6j3L1YxtmZ3ByZ"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2341ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"518c2730df86c0cbb7000019", "email"=>"someone23@example.com", "encrypted_password"=>"$2a$04$exTDaa6XghbyOsp8y7IwK.lH97hQBHBCBoqaz2tupq8kmShyaYChS", "sign_in_count"=>0, "authentication_token"=>"JWTy3e6j3L1YxtmZ3ByZ", "updated_at"=>2013-05-09 22:46:08 UTC, "created_at"=>2013-05-09 22:46:08 UTC}] flags=[] (0.0930ms)
+Started POST "/api/v1/login" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::SessionsController#create as HTML
+  Parameters: {"password"=>"[FILTERED]", "session"=>{"password"=>"[FILTERED]"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"email"=>""}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.4489ms)
+Completed 401 Unauthorized in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.3779ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0489ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0441ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone24@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2642ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"BfFe58WQ5xu1WxvdW5C4"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2761ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"518c2730df86c0cbb700001a", "email"=>"someone24@example.com", "encrypted_password"=>"$2a$04$NMRyKzkR5hJC4o5XE1DWleipfPK1oQqOXaw.IA4pATyLOL7yHDsVe", "sign_in_count"=>0, "authentication_token"=>"BfFe58WQ5xu1WxvdW5C4", "updated_at"=>2013-05-09 22:46:08 UTC, "created_at"=>2013-05-09 22:46:08 UTC}] flags=[] (0.1040ms)
+Started POST "/api/v1/login" for 127.0.0.1 at 2013-05-09 15:46:08 -0700
+Processing by Api::V1::SessionsController#create as HTML
+  Parameters: {"password"=>"[FILTERED]", "session"=>{"password"=>"[FILTERED]"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"email"=>""}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.4241ms)
+Completed 401 Unauthorized in 1ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4568ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0529ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0570ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (23.6149ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (129.9160ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0999ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0677ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (28.4789ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.2973ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0858ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0451ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7660ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"url"=>"http://maps.google.com/maps?q=-122.41175,+San Francisco+(37.771008)"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (5.0182ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_test command={:count=>"mongoid_shortener_shortened_urls", :query=>{}} (0.4699ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"unique_key"=>"0"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.4699ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:url=>"http://maps.google.com/maps?q=-122.41175,+San Francisco+(37.771008)"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2820ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:unique_key=>"0"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3409ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=mongoid_shortener_shortened_urls documents=[{"_id"=>"5192a82cdf86c0b0f2000001", "use_count"=>0, "url"=>"http://maps.google.com/maps?q=-122.41175,+San Francisco+(37.771008)", "unique_key"=>"0", "updated_at"=>2013-05-14 21:10:04 UTC, "created_at"=>2013-05-14 21:10:04 UTC}] flags=[] (0.1471ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.7489ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.1352ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0792ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0811ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.8800ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"url"=>"http://maps.google.com/maps?q=-122.41175,+San Francisco+(37.771008)"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3099ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_test command={:count=>"mongoid_shortener_shortened_urls", :query=>{}} (0.3970ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"unique_key"=>"0"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3381ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:url=>"http://maps.google.com/maps?q=-122.41175,+San Francisco+(37.771008)"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3321ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:unique_key=>"0"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2728ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=mongoid_shortener_shortened_urls documents=[{"_id"=>"5192a97adf86c04307000001", "use_count"=>0, "url"=>"http://maps.google.com/maps?q=-122.41175,+San Francisco+(37.771008)", "unique_key"=>"0", "updated_at"=>2013-05-14 21:15:38 UTC, "created_at"=>2013-05-14 21:15:38 UTC}] flags=[] (0.1452ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4818ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0732ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0510ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0510ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.8178ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"url"=>"http://maps.google.com/maps?q=-122.41175,+San Francisco+(37.771008)"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3650ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_test command={:count=>"mongoid_shortener_shortened_urls", :query=>{}} (0.3412ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"unique_key"=>"0"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2420ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:url=>"http://maps.google.com/maps?q=-122.41175,+San Francisco+(37.771008)"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2501ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:unique_key=>"0"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2882ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=mongoid_shortener_shortened_urls documents=[{"_id"=>"5192a9bedf86c031f6000001", "use_count"=>0, "url"=>"http://maps.google.com/maps?q=-122.41175,+San Francisco+(37.771008)", "unique_key"=>"0", "updated_at"=>2013-05-14 21:16:46 UTC, "created_at"=>2013-05-14 21:16:46 UTC}] flags=[] (0.1280ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.3877ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0608ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0451ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0432ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.0638ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"url"=>"http://maps.google.com/maps?q=37.771008,+-122.41175+(San Francisco)"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.4601ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_test command={:count=>"mongoid_shortener_shortened_urls", :query=>{}} (0.4139ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"unique_key"=>"0"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3300ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:url=>"http://maps.google.com/maps?q=37.771008,+-122.41175+(San Francisco)"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3767ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:unique_key=>"0"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3421ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=mongoid_shortener_shortened_urls documents=[{"_id"=>"5192aa6adf86c0b78c000001", "use_count"=>0, "url"=>"http://maps.google.com/maps?q=37.771008,+-122.41175+(San Francisco)", "unique_key"=>"0", "updated_at"=>2013-05-14 21:19:38 UTC, "created_at"=>2013-05-14 21:19:38 UTC}] flags=[] (0.1359ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.5071ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0801ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0601ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0472ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.8080ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.3850ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0839ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0582ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0482ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.9661ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"url"=>"http://maps.google.com/maps?q=37.771008,+-122.41175+(San Francisco)"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2780ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_test command={:count=>"mongoid_shortener_shortened_urls", :query=>{}} (0.2949ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"unique_key"=>"0"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3860ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:url=>"http://maps.google.com/maps?q=37.771008,+-122.41175+(San Francisco)"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3891ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:unique_key=>"0"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2539ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=mongoid_shortener_shortened_urls documents=[{"_id"=>"5192aa82df86c0cb3f000001", "use_count"=>0, "url"=>"http://maps.google.com/maps?q=37.771008,+-122.41175+(San Francisco)", "unique_key"=>"0", "updated_at"=>2013-05-14 21:20:02 UTC, "created_at"=>2013-05-14 21:20:02 UTC}] flags=[] (0.1397ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.6390ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0982ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0648ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0603ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7889ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.3467ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0882ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0498ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0479ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (28.5850ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.3650ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0777ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0582ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0432ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (32.0039ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4041ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.1009ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0670ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0560ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.8070ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.3986ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0889ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0529ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0560ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.1308ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.6099ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.1371ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0820ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0708ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (28.3489ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.3519ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0861ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0489ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0429ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (29.2752ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.5698ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0911ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0577ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0570ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (28.8870ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4573ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.1028ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0670ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0601ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.0440ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4649ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0858ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0460ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0451ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.8740ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"url"=>"http://maps.google.com/maps?q=37.771008,+-122.41175+(San Francisco)"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3181ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_test command={:count=>"mongoid_shortener_shortened_urls", :query=>{}} (0.3572ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"unique_key"=>"0"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.4313ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:url=>"http://maps.google.com/maps?q=37.771008,+-122.41175+(San Francisco)"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3130ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:unique_key=>"0"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2191ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=mongoid_shortener_shortened_urls documents=[{"_id"=>"5192add1df86c04c9e000001", "use_count"=>0, "url"=>"http://maps.google.com/maps?q=37.771008,+-122.41175+(San Francisco)", "unique_key"=>"0", "updated_at"=>2013-05-14 21:34:09 UTC, "created_at"=>2013-05-14 21:34:09 UTC}] flags=[] (0.1516ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.6661ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.1409ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0811ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0710ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7539ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"url"=>"http://maps.google.com/maps?q=37.771008,+-122.41175+(San Francisco)"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2592ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_test command={:count=>"mongoid_shortener_shortened_urls", :query=>{}} (0.4230ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"unique_key"=>"0"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3459ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:url=>"http://maps.google.com/maps?q=37.771008,+-122.41175+(San Francisco)"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3290ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:unique_key=>"0"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3068ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=mongoid_shortener_shortened_urls documents=[{"_id"=>"5192ae27df86c05a18000001", "use_count"=>0, "url"=>"http://maps.google.com/maps?q=37.771008,+-122.41175+(San Francisco)", "unique_key"=>"0", "updated_at"=>2013-05-14 21:35:35 UTC, "created_at"=>2013-05-14 21:35:35 UTC}] flags=[] (0.1421ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.5059ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0801ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0730ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0432ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (28.4290ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone1@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2842ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"qKzqkLC6p4FP43syXyFL"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (1.1170ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"5192af47df86c0ecb3000001", "email"=>"someone1@example.com", "encrypted_password"=>"$2a$04$GDSr.LvQZr4px4vKhkXpuO5h71ffeszmFZ5csN0e4FVhdeY./nsnG", "sign_in_count"=>0, "authentication_token"=>"qKzqkLC6p4FP43syXyFL", "updated_at"=>2013-05-14 21:40:23 UTC, "created_at"=>2013-05-14 21:40:23 UTC}] flags=[] (0.1500ms)
+Started GET "/api/v1/places?authentication_token=qKzqkLC6p4FP43syXyFL" for 127.0.0.1 at 2013-05-14 14:40:23 -0700
+Processing by Api::V1::PlacesController#index as HTML
+  Parameters: {"authentication_token"=>"qKzqkLC6p4FP43syXyFL"}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"qKzqkLC6p4FP43syXyFL"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.5960ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=places selector={"user_id"=>"5192af47df86c0ecb3000001"} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.2799ms)
+Completed 200 OK in 2ms (Views: 0.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.5410ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0901ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0548ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0472ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone2@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3378ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"WpSKP3qP5njkqhPoYNdr"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2232ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"5192af47df86c0ecb3000002", "email"=>"someone2@example.com", "encrypted_password"=>"$2a$04$a8L7ElRDjAUmCPncQNYjCuRyqAqqnEK8xP7hNyg4QXC3BmL6ZxFsO", "sign_in_count"=>0, "authentication_token"=>"WpSKP3qP5njkqhPoYNdr", "updated_at"=>2013-05-14 21:40:23 UTC, "created_at"=>2013-05-14 21:40:23 UTC}] flags=[] (0.1080ms)
+Started POST "/api/v1/places" for 127.0.0.1 at 2013-05-14 14:40:23 -0700
+Processing by Api::V1::PlacesController#create as HTML
+  Parameters: {"authentication_token"=>"WpSKP3qP5njkqhPoYNdr", "name"=>"home", "lat"=>"1.1", "long"=>"1.1", "place"=>{"name"=>"home", "lat"=>"1.1", "long"=>"1.1"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"WpSKP3qP5njkqhPoYNdr"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.5908ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"url"=>"http://maps.google.com/maps?q=1.1,+1.1+(home)"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2642ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_test command={:count=>"mongoid_shortener_shortened_urls", :query=>{}} (0.3462ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"unique_key"=>"0"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2441ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:url=>"http://maps.google.com/maps?q=1.1,+1.1+(home)"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3121ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:unique_key=>"0"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2940ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=mongoid_shortener_shortened_urls documents=[{"_id"=>"5192af47df86c0ecb3000003", "use_count"=>0, "url"=>"http://maps.google.com/maps?q=1.1,+1.1+(home)", "unique_key"=>"0", "updated_at"=>2013-05-14 21:40:23 UTC, "created_at"=>2013-05-14 21:40:23 UTC}] flags=[] (0.1030ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=places documents=[{"_id"=>"5192af47df86c0ecb3000004", "name"=>"home", "lat"=>"1.1", "long"=>"1.1", "location_url"=>"http://localhost:3000/map~0", "user_id"=>"5192af47df86c0ecb3000002", "updated_at"=>2013-05-14 21:40:23 UTC, "created_at"=>2013-05-14 21:40:23 UTC}] flags=[] (0.0939ms)
+Completed 200 OK in 8ms (Views: 0.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.5589ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0598ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0460ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0463ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone3@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3259ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"rHhK6EHjq5hXocSKqLac"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2811ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"5192af47df86c0ecb3000005", "email"=>"someone3@example.com", "encrypted_password"=>"$2a$04$fcGfLtwHNaMvGO0aE/dyTe4vQrcBY9INwmDICCp2ptF3Wt2TcPtI.", "sign_in_count"=>0, "authentication_token"=>"rHhK6EHjq5hXocSKqLac", "updated_at"=>2013-05-14 21:40:23 UTC, "created_at"=>2013-05-14 21:40:23 UTC}] flags=[] (0.0918ms)
+Started POST "/api/v1/places" for 127.0.0.1 at 2013-05-14 14:40:23 -0700
+Processing by Api::V1::PlacesController#create as HTML
+  Parameters: {"authentication_token"=>"rHhK6EHjq5hXocSKqLac", "name"=>"home", "lat"=>"1.1", "long"=>"1.1", "place"=>{"name"=>"home", "lat"=>"1.1", "long"=>"1.1"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"rHhK6EHjq5hXocSKqLac"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.5240ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"url"=>"http://maps.google.com/maps?q=1.1,+1.1+(home)"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2592ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_test command={:count=>"mongoid_shortener_shortened_urls", :query=>{}} (0.2899ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"unique_key"=>"0"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2413ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:url=>"http://maps.google.com/maps?q=1.1,+1.1+(home)"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.1600ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:unique_key=>"0"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.1490ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=mongoid_shortener_shortened_urls documents=[{"_id"=>"5192af47df86c0ecb3000006", "use_count"=>0, "url"=>"http://maps.google.com/maps?q=1.1,+1.1+(home)", "unique_key"=>"0", "updated_at"=>2013-05-14 21:40:23 UTC, "created_at"=>2013-05-14 21:40:23 UTC}] flags=[] (0.0970ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=places documents=[{"_id"=>"5192af47df86c0ecb3000007", "name"=>"home", "lat"=>"1.1", "long"=>"1.1", "location_url"=>"http://localhost:3000/map~0", "user_id"=>"5192af47df86c0ecb3000005", "updated_at"=>2013-05-14 21:40:23 UTC, "created_at"=>2013-05-14 21:40:23 UTC}] flags=[] (0.0730ms)
+Completed 200 OK in 6ms (Views: 0.2ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_test command={:count=>"places", :query=>{}} (0.3371ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4160ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0651ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0501ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0439ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.8142ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone1@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2759ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"xqsLcE2t9mzW6Mvu1Kkv"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3991ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"5192af5ddf86c0b897000001", "email"=>"someone1@example.com", "encrypted_password"=>"$2a$04$7cKxYfuGpDWOZWbvlLzOb.SZ7GSJzWoha2.LUkUpP2SVyfhxlrfIy", "sign_in_count"=>0, "authentication_token"=>"xqsLcE2t9mzW6Mvu1Kkv", "updated_at"=>2013-05-14 21:40:45 UTC, "created_at"=>2013-05-14 21:40:45 UTC}] flags=[] (0.1543ms)
+Started GET "/api/v1/places?authentication_token=xqsLcE2t9mzW6Mvu1Kkv" for 127.0.0.1 at 2013-05-14 14:40:45 -0700
+Processing by Api::V1::PlacesController#index as HTML
+  Parameters: {"authentication_token"=>"xqsLcE2t9mzW6Mvu1Kkv"}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"xqsLcE2t9mzW6Mvu1Kkv"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.5293ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=places selector={"user_id"=>"5192af5ddf86c0b897000001"} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.3090ms)
+Completed 200 OK in 2ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4809ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0730ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0498ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0551ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone2@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3829ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"pcu6AxGVsN4QGbykxhwN"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2670ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"5192af5ddf86c0b897000002", "email"=>"someone2@example.com", "encrypted_password"=>"$2a$04$/YJMVFdEJPhe9e2XsN80lupFtAq5RULy/JCbZym/56wBQp.IEfNve", "sign_in_count"=>0, "authentication_token"=>"pcu6AxGVsN4QGbykxhwN", "updated_at"=>2013-05-14 21:40:45 UTC, "created_at"=>2013-05-14 21:40:45 UTC}] flags=[] (0.0951ms)
+Started POST "/api/v1/places" for 127.0.0.1 at 2013-05-14 14:40:45 -0700
+Processing by Api::V1::PlacesController#create as HTML
+  Parameters: {"authentication_token"=>"pcu6AxGVsN4QGbykxhwN", "name"=>"home", "lat"=>"1.1", "long"=>"1.1", "place"=>{"name"=>"home", "lat"=>"1.1", "long"=>"1.1"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"pcu6AxGVsN4QGbykxhwN"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.4990ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"url"=>"http://maps.google.com/maps?q=1.1,+1.1+(home)"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2789ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_test command={:count=>"mongoid_shortener_shortened_urls", :query=>{}} (0.2823ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"unique_key"=>"0"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2680ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:url=>"http://maps.google.com/maps?q=1.1,+1.1+(home)"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3293ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:unique_key=>"0"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2832ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=mongoid_shortener_shortened_urls documents=[{"_id"=>"5192af5ddf86c0b897000003", "use_count"=>0, "url"=>"http://maps.google.com/maps?q=1.1,+1.1+(home)", "unique_key"=>"0", "updated_at"=>2013-05-14 21:40:45 UTC, "created_at"=>2013-05-14 21:40:45 UTC}] flags=[] (0.0999ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=places documents=[{"_id"=>"5192af5ddf86c0b897000004", "name"=>"home", "lat"=>"1.1", "long"=>"1.1", "location_url"=>"http://localhost:3000/map~0", "user_id"=>"5192af5ddf86c0b897000002", "updated_at"=>2013-05-14 21:40:58 UTC, "created_at"=>2013-05-14 21:40:58 UTC}] flags=[] (0.1769ms)
+Completed 200 OK in 12890ms (Views: 0.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.5240ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0582ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0463ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0491ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone3@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3471ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"DRYp7vPm6gKdQy1goeDF"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2780ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"5192af6adf86c0b897000005", "email"=>"someone3@example.com", "encrypted_password"=>"$2a$04$1Wbps66hsGphL0Hdac8jB.i6GWYDlNi7W72tmow3ic7LysneqbjPa", "sign_in_count"=>0, "authentication_token"=>"DRYp7vPm6gKdQy1goeDF", "updated_at"=>2013-05-14 21:40:58 UTC, "created_at"=>2013-05-14 21:40:58 UTC}] flags=[] (0.0870ms)
+Started POST "/api/v1/places" for 127.0.0.1 at 2013-05-14 14:40:58 -0700
+Processing by Api::V1::PlacesController#create as HTML
+  Parameters: {"authentication_token"=>"DRYp7vPm6gKdQy1goeDF", "name"=>"home", "lat"=>"1.1", "long"=>"1.1", "place"=>{"name"=>"home", "lat"=>"1.1", "long"=>"1.1"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"DRYp7vPm6gKdQy1goeDF"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.5019ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"url"=>"http://maps.google.com/maps?q=1.1,+1.1+(home)"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2739ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_test command={:count=>"mongoid_shortener_shortened_urls", :query=>{}} (0.2549ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"unique_key"=>"0"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2580ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:url=>"http://maps.google.com/maps?q=1.1,+1.1+(home)"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2699ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:unique_key=>"0"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2251ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=mongoid_shortener_shortened_urls documents=[{"_id"=>"5192af6adf86c0b897000006", "use_count"=>0, "url"=>"http://maps.google.com/maps?q=1.1,+1.1+(home)", "unique_key"=>"0", "updated_at"=>2013-05-14 21:40:58 UTC, "created_at"=>2013-05-14 21:40:58 UTC}] flags=[] (0.1020ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=places documents=[{"_id"=>"5192af6adf86c0b897000007", "name"=>"home", "lat"=>"1.1", "long"=>"1.1", "location_url"=>"http://localhost:3000/map~0", "user_id"=>"5192af6adf86c0b897000005", "updated_at"=>2013-05-14 21:41:00 UTC, "created_at"=>2013-05-14 21:41:00 UTC}] flags=[] (0.1400ms)
+Completed 200 OK in 2065ms (Views: 0.2ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_test command={:count=>"places", :query=>{}} (0.3641ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4611ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0591ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0489ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0510ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.8709ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone1@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2921ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"r5Sp8GvzkF7ewbx3fFRn"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3600ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"5192b009df86c01e7a000001", "email"=>"someone1@example.com", "encrypted_password"=>"$2a$04$K32ppPPVrCntqeE8cYALneX.MFdyDBwlj/Njm/LsrQAPV.PEhcC2e", "sign_in_count"=>0, "authentication_token"=>"r5Sp8GvzkF7ewbx3fFRn", "updated_at"=>2013-05-14 21:43:37 UTC, "created_at"=>2013-05-14 21:43:37 UTC}] flags=[] (0.1521ms)
+Started GET "/api/v1/places?authentication_token=r5Sp8GvzkF7ewbx3fFRn" for 127.0.0.1 at 2013-05-14 14:43:37 -0700
+Processing by Api::V1::PlacesController#index as HTML
+  Parameters: {"authentication_token"=>"r5Sp8GvzkF7ewbx3fFRn"}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"r5Sp8GvzkF7ewbx3fFRn"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.5331ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=places selector={"user_id"=>"5192b009df86c01e7a000001"} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.3150ms)
+Completed 200 OK in 3ms (Views: 0.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.5190ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0930ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0460ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0439ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone2@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2968ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"b5p4jVK1TPFoeR9PCmCr"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2730ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"5192b009df86c01e7a000002", "email"=>"someone2@example.com", "encrypted_password"=>"$2a$04$MLfDNBQ/YRcnsOLcoyxfdO70hYZvarlXhayJE8/./jOawve0XtKj.", "sign_in_count"=>0, "authentication_token"=>"b5p4jVK1TPFoeR9PCmCr", "updated_at"=>2013-05-14 21:43:37 UTC, "created_at"=>2013-05-14 21:43:37 UTC}] flags=[] (0.0920ms)
+Started POST "/api/v1/places" for 127.0.0.1 at 2013-05-14 14:43:37 -0700
+Processing by Api::V1::PlacesController#create as HTML
+  Parameters: {"authentication_token"=>"b5p4jVK1TPFoeR9PCmCr", "name"=>"home", "lat"=>"1.1", "long"=>"1.1", "place"=>{"name"=>"home", "lat"=>"1.1", "long"=>"1.1"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"b5p4jVK1TPFoeR9PCmCr"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.9410ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"url"=>"http://maps.google.com/maps?q=1.1,+1.1+(home)"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.6809ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_test command={:count=>"mongoid_shortener_shortened_urls", :query=>{}} (0.6919ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"unique_key"=>"0"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2391ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:url=>"http://maps.google.com/maps?q=1.1,+1.1+(home)"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3102ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:unique_key=>"0"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2911ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=mongoid_shortener_shortened_urls documents=[{"_id"=>"5192b009df86c01e7a000003", "use_count"=>0, "url"=>"http://maps.google.com/maps?q=1.1,+1.1+(home)", "unique_key"=>"0", "updated_at"=>2013-05-14 21:43:37 UTC, "created_at"=>2013-05-14 21:43:37 UTC}] flags=[] (0.1059ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=places documents=[{"_id"=>"5192b009df86c01e7a000004", "name"=>"home", "lat"=>"1.1", "long"=>"1.1", "location_url"=>"http://localhost:3000/map~0", "user_id"=>"5192b009df86c01e7a000002", "updated_at"=>2013-05-14 21:43:37 UTC, "created_at"=>2013-05-14 21:43:37 UTC}] flags=[] (0.1028ms)
+Completed 200 OK in 11ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4890ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0567ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0620ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0460ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone3@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3512ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"vkzDp38qv6rRZRaqhzu1"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3181ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"5192b009df86c01e7a000005", "email"=>"someone3@example.com", "encrypted_password"=>"$2a$04$DGDR2Gh9CP4SMtXorX./ae9FwGnFhGmKAHCvpVmJAqU405KkcO0Xi", "sign_in_count"=>0, "authentication_token"=>"vkzDp38qv6rRZRaqhzu1", "updated_at"=>2013-05-14 21:43:37 UTC, "created_at"=>2013-05-14 21:43:37 UTC}] flags=[] (0.0992ms)
+Started POST "/api/v1/places" for 127.0.0.1 at 2013-05-14 14:43:37 -0700
+Processing by Api::V1::PlacesController#create as HTML
+  Parameters: {"authentication_token"=>"vkzDp38qv6rRZRaqhzu1", "name"=>"home", "lat"=>"1.1", "long"=>"1.1", "place"=>{"name"=>"home", "lat"=>"1.1", "long"=>"1.1"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"vkzDp38qv6rRZRaqhzu1"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.5250ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"url"=>"http://maps.google.com/maps?q=1.1,+1.1+(home)"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2508ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_test command={:count=>"mongoid_shortener_shortened_urls", :query=>{}} (0.2742ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"unique_key"=>"0"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2930ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:url=>"http://maps.google.com/maps?q=1.1,+1.1+(home)"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2191ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:unique_key=>"0"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2313ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=mongoid_shortener_shortened_urls documents=[{"_id"=>"5192b009df86c01e7a000006", "use_count"=>0, "url"=>"http://maps.google.com/maps?q=1.1,+1.1+(home)", "unique_key"=>"0", "updated_at"=>2013-05-14 21:43:37 UTC, "created_at"=>2013-05-14 21:43:37 UTC}] flags=[] (0.1206ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=places documents=[{"_id"=>"5192b009df86c01e7a000007", "name"=>"home", "lat"=>"1.1", "long"=>"1.1", "location_url"=>"http://localhost:3000/map~0", "user_id"=>"5192b009df86c01e7a000005", "updated_at"=>2013-05-14 21:43:37 UTC, "created_at"=>2013-05-14 21:43:37 UTC}] flags=[] (0.0920ms)
+Completed 200 OK in 7ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_test command={:count=>"places", :query=>{}} (0.3450ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.5000ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0567ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0570ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0503ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7501ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone1@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2851ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"zJKqbca5gPyZhPgottd5"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.4101ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"5192b040df86c01921000001", "email"=>"someone1@example.com", "encrypted_password"=>"$2a$04$IOwQO1uNYOG8m7Wvktf32O06fpQS1oZ8XZpAoxHad4Yx3.RCyikdO", "sign_in_count"=>0, "authentication_token"=>"zJKqbca5gPyZhPgottd5", "updated_at"=>2013-05-14 21:44:32 UTC, "created_at"=>2013-05-14 21:44:32 UTC}] flags=[] (0.1490ms)
+Started POST "/api/v1/places" for 127.0.0.1 at 2013-05-14 14:44:32 -0700
+Processing by Api::V1::PlacesController#create as HTML
+  Parameters: {"authentication_token"=>"zJKqbca5gPyZhPgottd5", "name"=>"home", "lat"=>"1.1", "long"=>"1.1", "place"=>{"name"=>"home", "lat"=>"1.1", "long"=>"1.1"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"zJKqbca5gPyZhPgottd5"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.6449ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"url"=>"http://maps.google.com/maps?q=1.1,+1.1+(home)"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2551ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_test command={:count=>"mongoid_shortener_shortened_urls", :query=>{}} (0.3178ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"unique_key"=>"0"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2661ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:url=>"http://maps.google.com/maps?q=1.1,+1.1+(home)"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2861ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:unique_key=>"0"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3219ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=mongoid_shortener_shortened_urls documents=[{"_id"=>"5192b040df86c01921000002", "use_count"=>0, "url"=>"http://maps.google.com/maps?q=1.1,+1.1+(home)", "unique_key"=>"0", "updated_at"=>2013-05-14 21:44:32 UTC, "created_at"=>2013-05-14 21:44:32 UTC}] flags=[] (0.1040ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=places documents=[{"_id"=>"5192b040df86c01921000003", "name"=>"home", "lat"=>"1.1", "long"=>"1.1", "location_url"=>"http://localhost:3000/map~0", "user_id"=>"5192b040df86c01921000001", "updated_at"=>2013-05-14 21:44:32 UTC, "created_at"=>2013-05-14 21:44:32 UTC}] flags=[] (0.0908ms)
+Completed 200 OK in 10ms (Views: 0.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4880ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0689ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0629ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0463ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone2@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3679ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"gkG5N9sYNXj5GWUjMrhB"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3390ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"5192b040df86c01921000004", "email"=>"someone2@example.com", "encrypted_password"=>"$2a$04$uvXod3fNkJZaT0V3SPq5HOjx75zgIw7W4MfK/FUmmogzVum6avWQC", "sign_in_count"=>0, "authentication_token"=>"gkG5N9sYNXj5GWUjMrhB", "updated_at"=>2013-05-14 21:44:32 UTC, "created_at"=>2013-05-14 21:44:32 UTC}] flags=[] (0.1023ms)
+Started POST "/api/v1/places" for 127.0.0.1 at 2013-05-14 14:44:32 -0700
+Processing by Api::V1::PlacesController#create as HTML
+  Parameters: {"authentication_token"=>"gkG5N9sYNXj5GWUjMrhB", "name"=>"home", "lat"=>"1.1", "long"=>"1.1", "place"=>{"name"=>"home", "lat"=>"1.1", "long"=>"1.1"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"gkG5N9sYNXj5GWUjMrhB"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3769ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"url"=>"http://maps.google.com/maps?q=1.1,+1.1+(home)"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3138ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_test command={:count=>"mongoid_shortener_shortened_urls", :query=>{}} (0.3250ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"unique_key"=>"0"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3190ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:url=>"http://maps.google.com/maps?q=1.1,+1.1+(home)"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2098ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:unique_key=>"0"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.1967ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=mongoid_shortener_shortened_urls documents=[{"_id"=>"5192b040df86c01921000005", "use_count"=>0, "url"=>"http://maps.google.com/maps?q=1.1,+1.1+(home)", "unique_key"=>"0", "updated_at"=>2013-05-14 21:44:32 UTC, "created_at"=>2013-05-14 21:44:32 UTC}] flags=[] (0.0832ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=places documents=[{"_id"=>"5192b040df86c01921000006", "name"=>"home", "lat"=>"1.1", "long"=>"1.1", "location_url"=>"http://localhost:3000/map~0", "user_id"=>"5192b040df86c01921000004", "updated_at"=>2013-05-14 21:44:32 UTC, "created_at"=>2013-05-14 21:44:32 UTC}] flags=[] (0.0710ms)
+Completed 200 OK in 6ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_test command={:count=>"places", :query=>{}} (0.4420ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4828ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0761ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0472ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0429ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone3@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3641ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"FCooaSUombqsqgf4ywsJ"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2720ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"5192b040df86c01921000007", "email"=>"someone3@example.com", "encrypted_password"=>"$2a$04$8rTdXR1kmnqN98h9n/PSye00WjTZafF25zwNLrxOYDGLiStfh6ysC", "sign_in_count"=>0, "authentication_token"=>"FCooaSUombqsqgf4ywsJ", "updated_at"=>2013-05-14 21:44:32 UTC, "created_at"=>2013-05-14 21:44:32 UTC}] flags=[] (0.0858ms)
+Started POST "/api/v1/places" for 127.0.0.1 at 2013-05-14 14:44:32 -0700
+Processing by Api::V1::PlacesController#create as HTML
+  Parameters: {"authentication_token"=>"FCooaSUombqsqgf4ywsJ", "name"=>"home", "lat"=>"1.1", "long"=>"1.1", "place"=>{"name"=>"home", "lat"=>"1.1", "long"=>"1.1"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"FCooaSUombqsqgf4ywsJ"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.5779ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"url"=>"http://maps.google.com/maps?q=1.1,+1.1+(home)"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3400ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_test command={:count=>"mongoid_shortener_shortened_urls", :query=>{}} (0.4139ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"unique_key"=>"0"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2687ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:url=>"http://maps.google.com/maps?q=1.1,+1.1+(home)"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2851ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:unique_key=>"0"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.1781ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=mongoid_shortener_shortened_urls documents=[{"_id"=>"5192b040df86c01921000008", "use_count"=>0, "url"=>"http://maps.google.com/maps?q=1.1,+1.1+(home)", "unique_key"=>"0", "updated_at"=>2013-05-14 21:44:32 UTC, "created_at"=>2013-05-14 21:44:32 UTC}] flags=[] (0.0970ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=places documents=[{"_id"=>"5192b040df86c01921000009", "name"=>"home", "lat"=>"1.1", "long"=>"1.1", "location_url"=>"http://localhost:3000/map~0", "user_id"=>"5192b040df86c01921000007", "updated_at"=>2013-05-14 21:44:32 UTC, "created_at"=>2013-05-14 21:44:32 UTC}] flags=[] (0.0761ms)
+Completed 200 OK in 7ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4847ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0570ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0610ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0503ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone4@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3309ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"5p8qczPEdWar8y85jho2"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3071ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"5192b040df86c0192100000a", "email"=>"someone4@example.com", "encrypted_password"=>"$2a$04$xf8LNvILEJJbIgXPphVp7OA/y1lEPmxC76GyxvlcSvJ.7pCk.ZjOq", "sign_in_count"=>0, "authentication_token"=>"5p8qczPEdWar8y85jho2", "updated_at"=>2013-05-14 21:44:32 UTC, "created_at"=>2013-05-14 21:44:32 UTC}] flags=[] (0.1028ms)
+Started GET "/api/v1/places?authentication_token=5p8qczPEdWar8y85jho2" for 127.0.0.1 at 2013-05-14 14:44:32 -0700
+Processing by Api::V1::PlacesController#index as HTML
+  Parameters: {"authentication_token"=>"5p8qczPEdWar8y85jho2"}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"5p8qczPEdWar8y85jho2"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.5288ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=places selector={"user_id"=>"5192b040df86c0192100000a"} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.2809ms)
+Completed 200 OK in 2ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.3612ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0613ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0451ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0451ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.8619ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone1@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2451ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"6wmVxXagit3vp8V6edeg"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3121ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"5192b06bdf86c08394000001", "email"=>"someone1@example.com", "encrypted_password"=>"$2a$04$9na8zznmuOPGfMYGjD6gfOtKnXYMDwaCfgOe52A0uNOuH/LA/miTq", "sign_in_count"=>0, "authentication_token"=>"6wmVxXagit3vp8V6edeg", "updated_at"=>2013-05-14 21:45:15 UTC, "created_at"=>2013-05-14 21:45:15 UTC}] flags=[] (0.1600ms)
+Started GET "/api/v1/places?authentication_token=6wmVxXagit3vp8V6edeg" for 127.0.0.1 at 2013-05-14 14:45:15 -0700
+Processing by Api::V1::PlacesController#index as HTML
+  Parameters: {"authentication_token"=>"6wmVxXagit3vp8V6edeg"}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"6wmVxXagit3vp8V6edeg"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.7970ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=places selector={"user_id"=>"5192b06bdf86c08394000001"} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.5720ms)
+Completed 200 OK in 3ms (Views: 0.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.3808ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0770ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0620ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0532ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone2@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3219ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"PKtUqpVNeU1V4azuxz3z"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3250ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"5192b06bdf86c08394000002", "email"=>"someone2@example.com", "encrypted_password"=>"$2a$04$aIkUmI07p8Gx1SItmB.bze9hHfRIG/sxyCVddYzTfy28vDgrFT7.q", "sign_in_count"=>0, "authentication_token"=>"PKtUqpVNeU1V4azuxz3z", "updated_at"=>2013-05-14 21:45:15 UTC, "created_at"=>2013-05-14 21:45:15 UTC}] flags=[] (0.0949ms)
+Started POST "/api/v1/places" for 127.0.0.1 at 2013-05-14 14:45:15 -0700
+Processing by Api::V1::PlacesController#create as HTML
+  Parameters: {"authentication_token"=>"PKtUqpVNeU1V4azuxz3z", "name"=>"home", "lat"=>"1.1", "long"=>"1.1", "place"=>{"name"=>"home", "lat"=>"1.1", "long"=>"1.1"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"PKtUqpVNeU1V4azuxz3z"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.5410ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"url"=>"http://maps.google.com/maps?q=1.1,+1.1+(home)"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2868ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_test command={:count=>"mongoid_shortener_shortened_urls", :query=>{}} (0.3200ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"unique_key"=>"0"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2570ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:url=>"http://maps.google.com/maps?q=1.1,+1.1+(home)"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3300ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:unique_key=>"0"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.5229ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=mongoid_shortener_shortened_urls documents=[{"_id"=>"5192b06bdf86c08394000003", "use_count"=>0, "url"=>"http://maps.google.com/maps?q=1.1,+1.1+(home)", "unique_key"=>"0", "updated_at"=>2013-05-14 21:45:15 UTC, "created_at"=>2013-05-14 21:45:15 UTC}] flags=[] (0.0970ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=places documents=[{"_id"=>"5192b06bdf86c08394000004", "name"=>"home", "lat"=>"1.1", "long"=>"1.1", "location_url"=>"http://localhost:3000/map~0", "user_id"=>"5192b06bdf86c08394000002", "updated_at"=>2013-05-14 21:45:15 UTC, "created_at"=>2013-05-14 21:45:15 UTC}] flags=[] (0.0901ms)
+Completed 200 OK in 10ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.5271ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0589ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0629ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0420ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone3@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3610ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"q9hiqP4dGCi21YgSwQp4"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3331ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"5192b06bdf86c08394000005", "email"=>"someone3@example.com", "encrypted_password"=>"$2a$04$sch95fFOgCjVk5Er0T/J.O4J0fhpWjVlqYbzkudFtU0WhSf1HMav6", "sign_in_count"=>0, "authentication_token"=>"q9hiqP4dGCi21YgSwQp4", "updated_at"=>2013-05-14 21:45:15 UTC, "created_at"=>2013-05-14 21:45:15 UTC}] flags=[] (0.0830ms)
+Started POST "/api/v1/places" for 127.0.0.1 at 2013-05-14 14:45:15 -0700
+Processing by Api::V1::PlacesController#create as HTML
+  Parameters: {"authentication_token"=>"q9hiqP4dGCi21YgSwQp4", "name"=>"home", "lat"=>"1.1", "long"=>"1.1", "place"=>{"name"=>"home", "lat"=>"1.1", "long"=>"1.1"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"q9hiqP4dGCi21YgSwQp4"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.5910ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"url"=>"http://maps.google.com/maps?q=1.1,+1.1+(home)"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2599ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_test command={:count=>"mongoid_shortener_shortened_urls", :query=>{}} (0.3521ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"unique_key"=>"0"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2491ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:url=>"http://maps.google.com/maps?q=1.1,+1.1+(home)"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.1872ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:unique_key=>"0"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.1550ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=mongoid_shortener_shortened_urls documents=[{"_id"=>"5192b06bdf86c08394000006", "use_count"=>0, "url"=>"http://maps.google.com/maps?q=1.1,+1.1+(home)", "unique_key"=>"0", "updated_at"=>2013-05-14 21:45:15 UTC, "created_at"=>2013-05-14 21:45:15 UTC}] flags=[] (0.1009ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=places documents=[{"_id"=>"5192b06bdf86c08394000007", "name"=>"home", "lat"=>"1.1", "long"=>"1.1", "location_url"=>"http://localhost:3000/map~0", "user_id"=>"5192b06bdf86c08394000005", "updated_at"=>2013-05-14 21:45:15 UTC, "created_at"=>2013-05-14 21:45:15 UTC}] flags=[] (0.0749ms)
+Completed 200 OK in 6ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4220ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0591ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0451ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0429ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={:email=>"someone4@example.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3681ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"pVHPHB9kC8xAQgUqypoA"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.3352ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=users documents=[{"_id"=>"5192b06bdf86c08394000008", "email"=>"someone4@example.com", "encrypted_password"=>"$2a$04$K2RaVpy7l4PVmbBS6b185Os778pCAn3.tD04F0XgtINSapkSTXOAq", "sign_in_count"=>0, "authentication_token"=>"pVHPHB9kC8xAQgUqypoA", "updated_at"=>2013-05-14 21:45:15 UTC, "created_at"=>2013-05-14 21:45:15 UTC}] flags=[] (0.0970ms)
+Started POST "/api/v1/places" for 127.0.0.1 at 2013-05-14 14:45:15 -0700
+Processing by Api::V1::PlacesController#create as HTML
+  Parameters: {"authentication_token"=>"pVHPHB9kC8xAQgUqypoA", "name"=>"home", "lat"=>"1.1", "long"=>"1.1", "place"=>{"name"=>"home", "lat"=>"1.1", "long"=>"1.1"}}
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=users selector={"$query"=>{"authentication_token"=>"pVHPHB9kC8xAQgUqypoA"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.5379ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"url"=>"http://maps.google.com/maps?q=1.1,+1.1+(home)"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.4072ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_test command={:count=>"mongoid_shortener_shortened_urls", :query=>{}} (0.2952ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={"$query"=>{"unique_key"=>"0"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (0.2899ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:url=>"http://maps.google.com/maps?q=1.1,+1.1+(home)"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2151ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={:unique_key=>"0"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.1559ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=mongoid_shortener_shortened_urls documents=[{"_id"=>"5192b06bdf86c08394000009", "use_count"=>0, "url"=>"http://maps.google.com/maps?q=1.1,+1.1+(home)", "unique_key"=>"0", "updated_at"=>2013-05-14 21:45:15 UTC, "created_at"=>2013-05-14 21:45:15 UTC}] flags=[] (0.0870ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_test collection=places documents=[{"_id"=>"5192b06bdf86c0839400000a", "name"=>"home", "lat"=>"1.1", "long"=>"1.1", "location_url"=>"http://localhost:3000/map~0", "user_id"=>"5192b06bdf86c08394000008", "updated_at"=>2013-05-14 21:45:15 UTC, "created_at"=>2013-05-14 21:45:15 UTC}] flags=[] (0.0699ms)
+Completed 200 OK in 6ms (Views: 0.1ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_test command={:count=>"places", :query=>{}} (0.3557ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_test collection=system.namespaces selector={:name=>{"$not"=>/system|\$/}} flags=[] limit=0 skip=0 batch_size=nil fields=nil (0.4740ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=users selector={} flags=[] (0.0541ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=places selector={} flags=[] (0.0520ms)
+  MOPED: 127.0.0.1:27017 DELETE       database=radio_collar_test collection=mongoid_shortener_shortened_urls selector={} flags=[] (0.0510ms)

@@ -397,3 +397,116 @@ Processing by Api::V1::PlacesController#index as */*
   MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=users selector={"$query"=>{"authentication_token"=>"sLK2f2qCKJJePNx7mJJ1"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.7010ms)
   MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=places selector={"user_id"=>"517d9133df86c081da000001"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5460ms)
 Completed 200 OK in 4149ms (Views: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-09 18:41:00 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 93ms (Views: 93.1ms)
+
+
+Started GET "/assets/api_v1/auth.css?body=1" for 127.0.0.1 at 2013-05-09 18:41:00 -0700
+Served asset /api_v1/auth.css - 200 OK (1ms)
+
+
+Started GET "/assets/api_v1/places.css?body=1" for 127.0.0.1 at 2013-05-09 18:41:00 -0700
+Served asset /api_v1/places.css - 200 OK (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-09 18:41:00 -0700
+Served asset /application.css - 200 OK (3ms)
+
+
+Started GET "/assets/api_v1/auth.js?body=1" for 127.0.0.1 at 2013-05-09 18:41:00 -0700
+Served asset /api_v1/auth.js - 200 OK (1ms)
+
+
+Started GET "/assets/api_v1/auth.js.js?body=1" for 127.0.0.1 at 2013-05-09 18:41:00 -0700
+Served asset /api_v1/auth.js.js - 200 OK (0ms)
+
+
+Started GET "/assets/api_v1/places.js.js?body=1" for 127.0.0.1 at 2013-05-09 18:41:00 -0700
+Served asset /api_v1/places.js.js - 200 OK (0ms)
+
+
+Started GET "/assets/api_v1/places.js?body=1" for 127.0.0.1 at 2013-05-09 18:41:00 -0700
+Served asset /api_v1/places.js - 200 OK (1ms)
+
+
+Started GET "/assets/pages.js.js?body=1" for 127.0.0.1 at 2013-05-09 18:41:00 -0700
+Served asset /pages.js.js - 200 OK (1ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-05-09 18:41:00 -0700
+Served asset /pages.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-09 18:41:00 -0700
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-09 18:41:00 -0700
+Served asset /jquery_ujs.js - 200 OK (33ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-05-09 18:41:00 -0700
+Served asset /pages.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-09 18:41:00 -0700
+Served asset /application.js - 200 OK (8ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.8171ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={"$query"=>{"url"=>"http://google.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (4.7989ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_development command={:count=>"mongoid_shortener_shortened_urls", :query=>{}} (0.4151ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={"$query"=>{"unique_key"=>"0"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4182ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={:url=>"http://google.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2902ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={:unique_key=>"0"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2580ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_development collection=mongoid_shortener_shortened_urls documents=[{"_id"=>"5192a377df86c07903000001", "use_count"=>0, "url"=>"http://google.com", "unique_key"=>"0", "updated_at"=>2013-05-14 20:49:59 UTC, "created_at"=>2013-05-14 20:49:59 UTC}] flags=[] (0.1440ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={"$query"=>{"url"=>"http://google.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (1.0161ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={"$query"=>{"url"=>"http://googleasfsda.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (1.0540ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_development command={:count=>"mongoid_shortener_shortened_urls", :query=>{}} (0.5069ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={"$query"=>{"unique_key"=>"1"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5751ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={:url=>"http://googleasfsda.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.4632ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={:unique_key=>"1"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.4139ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_development collection=mongoid_shortener_shortened_urls documents=[{"_id"=>"5192a380df86c07903000002", "use_count"=>0, "url"=>"http://googleasfsda.com", "unique_key"=>"1", "updated_at"=>2013-05-14 20:50:08 UTC, "created_at"=>2013-05-14 20:50:08 UTC}] flags=[] (0.1450ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={"$query"=>{"url"=>"http://googleasfssdgdfsda.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.7620ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_development command={:count=>"mongoid_shortener_shortened_urls", :query=>{}} (0.6149ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={"$query"=>{"unique_key"=>"2"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5398ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={:url=>"http://googleasfssdgdfsda.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.4220ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={:unique_key=>"2"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3920ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_development collection=mongoid_shortener_shortened_urls documents=[{"_id"=>"5192a3dadf86c07903000003", "use_count"=>0, "url"=>"http://googleasfssdgdfsda.com", "unique_key"=>"2", "updated_at"=>2013-05-14 20:51:38 UTC, "created_at"=>2013-05-14 20:51:38 UTC}] flags=[] (0.1509ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7689ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={"$query"=>{"url"=>"http://help.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2980ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_development command={:count=>"mongoid_shortener_shortened_urls", :query=>{}} (0.4160ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={"$query"=>{"unique_key"=>"3"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4058ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={:url=>"http://help.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3631ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={:unique_key=>"3"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3099ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_development collection=mongoid_shortener_shortened_urls documents=[{"_id"=>"5192a3f5df86c0094d000001", "use_count"=>0, "url"=>"http://help.com", "unique_key"=>"3", "updated_at"=>2013-05-14 20:52:05 UTC, "created_at"=>2013-05-14 20:52:05 UTC}] flags=[] (0.1478ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.0669ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={"$query"=>{"url"=>"http://helpme\n"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.7012ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_development command={:count=>"mongoid_shortener_shortened_urls", :query=>{}} (0.5472ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={"$query"=>{"unique_key"=>"4"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5460ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={:url=>"http://helpme\n"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.5279ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={:unique_key=>"4"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3383ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={"$query"=>{"url"=>"http://helpme.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.8080ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_development command={:count=>"mongoid_shortener_shortened_urls", :query=>{}} (0.5648ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={"$query"=>{"unique_key"=>"4"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5503ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={:url=>"http://helpme.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.4499ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={:unique_key=>"4"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3610ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_development collection=mongoid_shortener_shortened_urls documents=[{"_id"=>"5192a52bdf86c0094d000002", "use_count"=>0, "url"=>"http://helpme.com", "unique_key"=>"4", "updated_at"=>2013-05-14 20:57:15 UTC, "created_at"=>2013-05-14 20:57:15 UTC}] flags=[] (0.1590ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.8199ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={"$query"=>{"url"=>"http://helpmea.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3030ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_development command={:count=>"mongoid_shortener_shortened_urls", :query=>{}} (0.4220ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={"$query"=>{"unique_key"=>"5"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4079ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={:url=>"http://helpmea.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.4110ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={:unique_key=>"5"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2527ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_development collection=mongoid_shortener_shortened_urls documents=[{"_id"=>"5192a538df86c0c5cd000001", "use_count"=>0, "url"=>"http://helpmea.com", "unique_key"=>"5", "updated_at"=>2013-05-14 20:57:28 UTC, "created_at"=>2013-05-14 20:57:28 UTC}] flags=[] (0.1571ms)
+
+
+Started GET "/~5" for 127.0.0.1 at 2013-05-14 13:57:41 -0700
+Processing by MongoidShortener::ShortenedUrlsController#translate as HTML
+  Parameters: {"unique_key"=>"~5"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7780ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={"$query"=>{"unique_key"=>"5"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3870ms)
+  MOPED: 127.0.0.1:27017 UPDATE       database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={"_id"=>"5192a538df86c0c5cd000001"} update={"$inc"=>{"use_count"=>1}} flags=[] (0.1249ms)
+Completed 301 Moved Permanently in 4ms
