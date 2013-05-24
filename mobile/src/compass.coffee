@@ -8,6 +8,7 @@ class Compass
     @hdg    = 0
     @spd    = 0
     @_grabGPS(options)
+  #OPTIMIZE: Put all the underscore methods into a closure.
   _grabGPS: (options) ->
     navigator.geolocation.watchPosition(@_parseGPS, @_parseErr, options)
   _parseGPS: (position) =>

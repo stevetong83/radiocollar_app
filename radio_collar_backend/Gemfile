@@ -37,6 +37,8 @@ gem 'json'
 gem 'delayed_job_mongoid'
 gem 'mongoid_slug'
 gem 'jbuilder'
+gem "mongoid_shortener"
+gem "yab62", require: "yab62"
 
 
 

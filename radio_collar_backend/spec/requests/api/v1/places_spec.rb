@@ -25,6 +25,7 @@ describe "Places" do
       let(:params) {{authentication_token: user.authentication_token, name: 'home', lat: '1.1', long: '1.1'}}
 
       it {response.status.should eq 200}
+      it {response.should be_success}
       it {Place.count.should eq 1}
     end
   end

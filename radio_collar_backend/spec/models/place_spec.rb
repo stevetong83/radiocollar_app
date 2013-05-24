@@ -1,5 +1,12 @@
 require 'spec_helper'
 
 describe Place do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe :set_map_url do 
+    before do 
+      @url = Place.set_map_url("San Francisco", "37.771008", "-122.41175")
+    end
+
+    it {@url.should include "http://localhost:3000"}
+
+  end
 end
