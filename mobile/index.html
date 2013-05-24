@@ -2,19 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>RadiCollar</title>
+    <title>RadioCollar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Loading Bootstrap -->
     <link href="css/style.css" rel="stylesheet">
     <!-- Javascript -->
-    <script src="js/phonegap.js"></script>
+    <script type="phonegap.js"></script>
     <script src="js/underscore.js"></script>
     <script src="js/jquery.js"></script>
-    <script src="js/application.js"></script>
     <script src="js/theatre.js"></script>
-    <script src='src/compass.js'></script>
-
+    <script src='js/compass.js'></script>
+    <script src='js/app.js'></script>
+    <script src='js/flyjsonp.js'></script>
   </head>
   <body>
     <div id="wrapper">
@@ -37,7 +37,7 @@
           <a href="#" onClick="nav.perform('#send-current');" class='btn'> Send Current Location</a>
           <a href="#" onClick="nav.perform('#send-saved');" class='btn'>Send Saved Location</a>
           <a href="#" onClick="nav.perform('#edit');" class='btn'>Edit Your Waypoints</a>
-          <a class="btn" href='#'>exit (stub btn)</a>
+          <a class="btn" onClick="navigator.app.exitApp()" href='#'>exit (stub btn)</a>
       </div>
       <p id="info">
       </p>

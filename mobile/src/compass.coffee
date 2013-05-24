@@ -11,13 +11,13 @@ class Compass
   _grabGPS: (options) ->
     navigator.geolocation.watchPosition(@_parseGPS, @_parseErr, options)
   _parseGPS: (position) =>
-    @lat    =position.coords.latitude
-    @lng    =position.coords.longitude
-    @alt    =position.coords.altitude
-    @acc    =position.coords.accuracy
-    @altAcc =position.coords.altitudeAccuracy
-    @hdg    =position.coords.heading
-    @spd    =position.coords.speed
+    @lat    = position.coords.latitude
+    @lng    = position.coords.longitude
+    @alt    = position.coords.altitude
+    @acc    = position.coords.accuracy
+    @altAcc = position.coords.altitudeAccuracy
+    @hdg    = position.coords.heading
+    @spd    = position.coords.speed
   _parseErr: (err) ->
     switch err.code
       when 1
@@ -38,4 +38,4 @@ $ ->
   setInterval ->
     message = "LAT: #{compass.lat} LNG: #{compass.lng} ALT: #{compass.alt} ACC: #{compass.acc} ALTACC: #{compass.altacc} HDG: #{compass.hdg} SPD: #{compass.spd} "
     $('#info').text(message)
-  , 1000
+  , 200
