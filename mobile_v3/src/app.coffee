@@ -1,106 +1,116 @@
+#=======================#
+# This is a re-adaption
+# of 'unpopular ideas'.
+# It's only half done.
+# I Left off on views
+# (Line 62)
+#=======================#
+
+
 $ ->
-  class Idea extends Backbone.Model
+#===
+  class window.Place extends Backbone.Model
     idAttribute: "_id"
-    defaults: ->
-      title: "none set"
-
+    # defaults: ->
+    #   #Not too useful for this model
+    #   title: ""
     initialize: ->
-      @set title: @defaults().title  unless @get("title")
+      @set title: @get("title")
+    validate: (attrs, optns) ->
+      if !@title
+        "Title is required"
+      else if !@lat
+        "Latitude is required"
+      else if !@lng
+        "Longitude is required"
+      #Returning undefined == good
+    urlRoot: "/places"
 
-    urlRoot: "/ideas"
+#===
+  class window.Places extends Backbone.Collection
+    model: Place
+    url: "/places"
 
-  class IdeaView extends Backbone.View
-    tagtitle: "li"
+  class window.PlaceView extends Backbone.View
+    tagtitle: "form"
     initialize: ->
       _.bindAll this, "render", "remove"
       @model.bind "change", @render
       @model.bind "destroy", @remove
-      @template = _.template($("#idea-template").html())
+      @template = _.template($("#gpsCtrlTmpl").html())
 
     events:
-      "click .destroy": "clear"
-      "dblclick .title": "edit"
-      "keypress .editBox": "updateIdea"
+      "click #send": "updatePlace"
 
     clear: ->
+      #Probably should implement this at some point...
       @model.destroy()
 
     edit: ->
+      #See comment for @clear()
       oldTitle = @model.get("title")
-      
-      #Optimize:
-      @$el.find(".title").html _.template("<input class=\"editBox\" type=\"text\" value=\"<%= oldTitle %>\">")
-      @$el.find("input").focus()
 
-    updateIdea: (e) ->
-      if e.keyCode is 13
-        if (@$el.find("input").val().length < 50) and (@$el.find("input").val().length > 2)
-          @model.set "title", $(".editBox").val()
-          @model.save()
-          return
-        alert "Ideas must be between 3 and 49 characters in length. Try again."
+    updatePlace: (e) ->
+      @model.save()
 
     render: ->
       renderedContent = @template(@model.toJSON())
       $(@el).html renderedContent
-      
-      #Return 'this' so that method chaining is possible
-      this
+      #@ for method chaining
+      @
 
-  class Ideas extends Backbone.Collection
-    model: Idea
-    url: "/ideas"
-
-  class IdeasView extends Backbone.View
+#===
+  class window.PlacesView extends Backbone.View
     initialize: ->
       _.bindAll this, "render"
-      @template = _.template($("#ideas-template").html())
+      @template = _.template($("#places-template").html())
       @collection.bind "reset", @render
       @collection.bind "change", @render
 
     render: ->
-      $ideas = undefined
+      $places = undefined
       collection = undefined
       $(@el).html @template
       
       #using this.$() scopes it to the particular DOM element
-      $ideas = @$(".ideas")
-      @collection.each (idea) ->
-        ideaItem = new IdeaView(
-          model: idea
+      $places = @$(".places")
+      @collection.each (place) ->
+        placeItem = new PlaceView(
+          model: place
           collection: collection
         )
-        $ideas.append ideaItem.render().el
+        $places.append placeItem.render().el
 
       this
 
     events:
-      "keypress .inputBox": "newIdea"
+      "keypress .inputBox": "newPlace"
 
-    newIdea: (e) ->
+    newPlace: (e) ->
       if e.keyCode is 13
         if ($(".inputBox").val().length < 50) and ($(".inputBox").val().length > 2)
-          newIdea = new Idea()
-          newIdea.set "title", $(".inputBox").val()
-          newIdea.save()
+          newPlace = new Place()
+          newPlace.set "title", $(".inputBox").val()
+          newPlace.save()
           $(".inputBox").val ""
           @collection.fetch()
         
         #wtf. Why wont it automatically repopulate?
         else
-          alert "Ideas must be between 3 and 49 characters in length. Try again."
+          alert "Places must be between 3 and 49 characters in length. Try again."
 
-  class UnpopularIdeas extends Backbone.Router
+#===
+  class window.UnpopularPlaces extends Backbone.Router
     routes:
       "": "home"
 
     initialize: ->
-      ideas = new Ideas()
-      ideas.fetch()
-      @stream = new IdeasView(collection: ideas)
+      places = new Places()
+      places.fetch()
+      @stream = new PlacesView(collection: places)
 
     home: ->
       $("#container").append @stream.render().el
 
-  window.App = new UnpopularIdeas()
+  window.App = new UnpopularPlaces()
   Backbone.history.start()

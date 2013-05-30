@@ -4,84 +4,90 @@
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
 
   $(function() {
-    var Idea, IdeaView, Ideas, IdeasView, UnpopularIdeas, _ref, _ref1, _ref2, _ref3, _ref4;
+    var _ref, _ref1, _ref2, _ref3, _ref4;
 
-    Idea = (function(_super) {
-      __extends(Idea, _super);
+    window.Place = (function(_super) {
+      __extends(Place, _super);
 
-      function Idea() {
-        _ref = Idea.__super__.constructor.apply(this, arguments);
+      function Place() {
+        _ref = Place.__super__.constructor.apply(this, arguments);
         return _ref;
       }
 
-      Idea.prototype.idAttribute = "_id";
+      Place.prototype.idAttribute = "_id";
 
-      Idea.prototype.defaults = function() {
-        return {
-          title: "none set"
-        };
+      Place.prototype.initialize = function() {
+        return this.set({
+          title: this.get("title")
+        });
       };
 
-      Idea.prototype.initialize = function() {
-        if (!this.get("title")) {
-          return this.set({
-            title: this.defaults().title
-          });
+      Place.prototype.validate = function(attrs, optns) {
+        if (!this.title) {
+          return "Title is required";
+        } else if (!this.lat) {
+          return "Latitude is required";
+        } else if (!this.lng) {
+          return "Longitude is required";
         }
       };
 
-      Idea.prototype.urlRoot = "/ideas";
+      Place.prototype.urlRoot = "/places";
 
-      return Idea;
+      return Place;
 
     })(Backbone.Model);
-    IdeaView = (function(_super) {
-      __extends(IdeaView, _super);
+    window.Places = (function(_super) {
+      __extends(Places, _super);
 
-      function IdeaView() {
-        _ref1 = IdeaView.__super__.constructor.apply(this, arguments);
+      function Places() {
+        _ref1 = Places.__super__.constructor.apply(this, arguments);
         return _ref1;
       }
 
-      IdeaView.prototype.tagtitle = "li";
+      Places.prototype.model = Place;
 
-      IdeaView.prototype.initialize = function() {
+      Places.prototype.url = "/places";
+
+      return Places;
+
+    })(Backbone.Collection);
+    window.PlaceView = (function(_super) {
+      __extends(PlaceView, _super);
+
+      function PlaceView() {
+        _ref2 = PlaceView.__super__.constructor.apply(this, arguments);
+        return _ref2;
+      }
+
+      PlaceView.prototype.tagtitle = "form";
+
+      PlaceView.prototype.initialize = function() {
         _.bindAll(this, "render", "remove");
         this.model.bind("change", this.render);
         this.model.bind("destroy", this.remove);
-        return this.template = _.template($("#idea-template").html());
+        return this.template = _.template($("#gpsCtrlTmpl").html());
       };
 
-      IdeaView.prototype.events = {
-        "click .destroy": "clear",
-        "dblclick .title": "edit",
-        "keypress .editBox": "updateIdea"
+      PlaceView.prototype.events = {
+        "click #send": "updatePlace"
       };
 
-      IdeaView.prototype.clear = function() {
+      PlaceView.prototype.clear = function() {
         return this.model.destroy();
       };
 
-      IdeaView.prototype.edit = function() {
+      PlaceView.prototype.edit = function() {
         var oldTitle;
 
-        oldTitle = this.model.get("title");
-        this.$el.find(".title").html(_.template("<input class=\"editBox\" type=\"text\" value=\"<%= oldTitle %>\">"));
-        return this.$el.find("input").focus();
+        return oldTitle = this.model.get("title");
       };
 
-      IdeaView.prototype.updateIdea = function(e) {
-        if (e.keyCode === 13) {
-          if ((this.$el.find("input").val().length < 50) && (this.$el.find("input").val().length > 2)) {
-            this.model.set("title", $(".editBox").val());
-            this.model.save();
-            return;
-          }
-          return alert("Ideas must be between 3 and 49 characters in length. Try again.");
-        }
+      PlaceView.prototype.updatePlace = function(e) {
+        return this.model.save();
       };
 
-      IdeaView.prototype.render = function() {
+      PlaceView.prototype.render = function() {
         var renderedContent;
 
         renderedContent = this.template(this.model.toJSON());
@@ -89,111 +95,96 @@
         return this;
       };
 
-      return IdeaView;
+      return PlaceView;
 
     })(Backbone.View);
-    Ideas = (function(_super) {
-      __extends(Ideas, _super);
+    window.PlacesView = (function(_super) {
+      __extends(PlacesView, _super);
 
-      function Ideas() {
-        _ref2 = Ideas.__super__.constructor.apply(this, arguments);
-        return _ref2;
-      }
-
-      Ideas.prototype.model = Idea;
-
-      Ideas.prototype.url = "/ideas";
-
-      return Ideas;
-
-    })(Backbone.Collection);
-    IdeasView = (function(_super) {
-      __extends(IdeasView, _super);
-
-      function IdeasView() {
-        _ref3 = IdeasView.__super__.constructor.apply(this, arguments);
+      function PlacesView() {
+        _ref3 = PlacesView.__super__.constructor.apply(this, arguments);
         return _ref3;
       }
 
-      IdeasView.prototype.initialize = function() {
+      PlacesView.prototype.initialize = function() {
         _.bindAll(this, "render");
-        this.template = _.template($("#ideas-template").html());
+        this.template = _.template($("#places-template").html());
         this.collection.bind("reset", this.render);
         return this.collection.bind("change", this.render);
       };
 
-      IdeasView.prototype.render = function() {
-        var $ideas, collection;
+      PlacesView.prototype.render = function() {
+        var $places, collection;
 
-        $ideas = void 0;
+        $places = void 0;
         collection = void 0;
         $(this.el).html(this.template);
-        $ideas = this.$(".ideas");
-        this.collection.each(function(idea) {
-          var ideaItem;
+        $places = this.$(".places");
+        this.collection.each(function(place) {
+          var placeItem;
 
-          ideaItem = new IdeaView({
-            model: idea,
+          placeItem = new PlaceView({
+            model: place,
             collection: collection
           });
-          return $ideas.append(ideaItem.render().el);
+          return $places.append(placeItem.render().el);
         });
         return this;
       };
 
-      IdeasView.prototype.events = {
-        "keypress .inputBox": "newIdea"
+      PlacesView.prototype.events = {
+        "keypress .inputBox": "newPlace"
       };
 
-      IdeasView.prototype.newIdea = function(e) {
-        var newIdea;
+      PlacesView.prototype.newPlace = function(e) {
+        var newPlace;
 
         if (e.keyCode === 13) {
           if (($(".inputBox").val().length < 50) && ($(".inputBox").val().length > 2)) {
-            newIdea = new Idea();
-            newIdea.set("title", $(".inputBox").val());
-            newIdea.save();
+            newPlace = new Place();
+            newPlace.set("title", $(".inputBox").val());
+            newPlace.save();
             $(".inputBox").val("");
             return this.collection.fetch();
           } else {
-            return alert("Ideas must be between 3 and 49 characters in length. Try again.");
+            return alert("Places must be between 3 and 49 characters in length. Try again.");
           }
         }
       };
 
-      return IdeasView;
+      return PlacesView;
 
     })(Backbone.View);
-    UnpopularIdeas = (function(_super) {
-      __extends(UnpopularIdeas, _super);
+    window.UnpopularPlaces = (function(_super) {
+      __extends(UnpopularPlaces, _super);
 
-      function UnpopularIdeas() {
-        _ref4 = UnpopularIdeas.__super__.constructor.apply(this, arguments);
+      function UnpopularPlaces() {
+        _ref4 = UnpopularPlaces.__super__.constructor.apply(this, arguments);
         return _ref4;
       }
 
-      UnpopularIdeas.prototype.routes = {
+      UnpopularPlaces.prototype.routes = {
         "": "home"
       };
 
-      UnpopularIdeas.prototype.initialize = function() {
-        var ideas;
+      UnpopularPlaces.prototype.initialize = function() {
+        var places;
 
-        ideas = new Ideas();
-        ideas.fetch();
-        return this.stream = new IdeasView({
-          collection: ideas
+        places = new Places();
+        places.fetch();
+        return this.stream = new PlacesView({
+          collection: places
         });
       };
 
-      UnpopularIdeas.prototype.home = function() {
+      UnpopularPlaces.prototype.home = function() {
         return $("#container").append(this.stream.render().el);
       };
 
-      return UnpopularIdeas;
+      return UnpopularPlaces;
 
     })(Backbone.Router);
-    window.App = new UnpopularIdeas();
+    window.App = new UnpopularPlaces();
     return Backbone.history.start();
   });
 
