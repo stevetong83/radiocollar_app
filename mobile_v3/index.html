@@ -9,12 +9,16 @@
   <script type="text/javascript" src='js/app.js'></script>
 </head>
 <body>
-<header></header>
-<section id="home"></section>
-<nav></nav>
-<footer></footer>
-<script type="text/template">
-  <form class="gpsControls">
+<header>Radio Collar</header>
+<section id="home">
+<p>Section line 1</p>
+<p>Section line 2</p>
+<p>Section line 3</p>
+<p>Section line 4</p>
+</section>
+<nav>Nav here...</nav>
+<script type="text/template" id="gpsCtrlTmpl">
+  <form>
       <input class="input" id="sendName" name="name" type="text" placeholder="name" value='<%= name %>'>
       <br>
       <input class="input" id="lat" name="lat" type="text" placeholder="Waiting for longitude data..." value='<%= lat %>'>
@@ -24,5 +28,6 @@
       <a href="#" class="btn" id="send">Send</a>
   </form>
 </script>
+<footer>(c) 2012, I don't use unicdoe characters</footer>
 </body>
 </html>
