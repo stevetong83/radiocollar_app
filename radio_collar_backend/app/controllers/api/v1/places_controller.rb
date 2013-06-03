@@ -1,5 +1,4 @@
 class Api::V1::PlacesController < Api::V1::ApiController
-  # skip_before_filter :authenticate_user!
 
   def index
     places = @user.places.all

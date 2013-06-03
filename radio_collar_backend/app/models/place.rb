@@ -12,8 +12,7 @@ class Place
   validates :name, :lat, :long, presence: true
 
   def self.set_map_url(name, lat, long)
-    google_url = "http://maps.google.com/maps?q=#{lat},+#{long}+(#{name})"
-    radiocollar_url = MongoidShortener.generate(google_url)
+    "http://maps.google.com/maps?q=#{lat},+#{long}+(#{name})".short_url
   end
 
 end

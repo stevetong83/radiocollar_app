@@ -1,7 +1,7 @@
 class Api::V1::SessionsController < Api::V1::ApiController
   skip_before_filter :verify_user, only: :create
   ##
-  # == POST /api/v1/sessions
+  # == POST /api/v1/login
   # Authenticate the user and return back authentication token if successful login
   # [Required POST VARS]
   #   email::
@@ -12,6 +12,7 @@ class Api::V1::SessionsController < Api::V1::ApiController
   # [401] Invalid Email or Password
 
   def create
+    # binding.pry
     user = User.find_for_database_authentication(email: params[:email])
  
     if user && user.valid_password?(params[:password])
@@ -23,7 +24,7 @@ class Api::V1::SessionsController < Api::V1::ApiController
   end
  
   ##
-  # == Delete /api/v1/sessions
+  # == Delete /api/v1/logout
   # Reset authentication token
   # [Required POST VARS]
   #   authentication_token::

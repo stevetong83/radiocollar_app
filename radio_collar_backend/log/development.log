@@ -510,3 +510,780 @@ Processing by MongoidShortener::ShortenedUrlsController#translate as HTML
   MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={"$query"=>{"unique_key"=>"5"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3870ms)
   MOPED: 127.0.0.1:27017 UPDATE       database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={"_id"=>"5192a538df86c0c5cd000001"} update={"$inc"=>{"use_count"=>1}} flags=[] (0.1249ms)
 Completed 301 Moved Permanently in 4ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-18 13:04:20 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 121ms (Views: 120.7ms)
+
+
+Started GET "/assets/api_v1/auth.css?body=1" for 127.0.0.1 at 2013-05-18 13:04:20 -0700
+Served asset /api_v1/auth.css - 200 OK (1ms)
+
+
+Started GET "/assets/api_v1/places.css?body=1" for 127.0.0.1 at 2013-05-18 13:04:20 -0700
+Served asset /api_v1/places.css - 200 OK (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-18 13:04:20 -0700
+Served asset /application.css - 200 OK (4ms)
+
+
+Started GET "/assets/api_v1/auth.js?body=1" for 127.0.0.1 at 2013-05-18 13:04:20 -0700
+Served asset /api_v1/auth.js - 200 OK (1ms)
+
+
+Started GET "/assets/api_v1/auth.js.js?body=1" for 127.0.0.1 at 2013-05-18 13:04:20 -0700
+Served asset /api_v1/auth.js.js - 200 OK (1ms)
+
+
+Started GET "/assets/api_v1/places.js?body=1" for 127.0.0.1 at 2013-05-18 13:04:20 -0700
+Served asset /api_v1/places.js - 200 OK (0ms)
+
+
+Started GET "/assets/api_v1/places.js.js?body=1" for 127.0.0.1 at 2013-05-18 13:04:20 -0700
+Served asset /api_v1/places.js.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-18 13:04:20 -0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-18 13:04:20 -0700
+Served asset /application.js - 200 OK (7ms)
+
+
+Started GET "/assets/pages.js.js?body=1" for 127.0.0.1 at 2013-05-18 13:04:20 -0700
+Served asset /pages.js.js - 200 OK (1ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-05-18 13:04:20 -0700
+Served asset /pages.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-18 13:04:20 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-05-18 13:04:20 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 192.168.0.3 at 2013-05-18 13:05:10 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 59ms (Views: 58.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.3 at 2013-05-18 13:05:10 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/api_v1/auth.css?body=1" for 192.168.0.3 at 2013-05-18 13:05:10 -0700
+Served asset /api_v1/auth.css - 200 OK (0ms)
+
+
+Started GET "/assets/api_v1/places.css?body=1" for 192.168.0.3 at 2013-05-18 13:05:10 -0700
+Served asset /api_v1/places.css - 200 OK (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 192.168.0.3 at 2013-05-18 13:05:10 -0700
+Served asset /pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.3 at 2013-05-18 13:05:10 -0700
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.3 at 2013-05-18 13:05:10 -0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/api_v1/auth.js?body=1" for 192.168.0.3 at 2013-05-18 13:05:10 -0700
+Served asset /api_v1/auth.js - 200 OK (0ms)
+
+
+Started GET "/assets/api_v1/auth.js.js?body=1" for 192.168.0.3 at 2013-05-18 13:05:10 -0700
+Served asset /api_v1/auth.js.js - 200 OK (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 192.168.0.3 at 2013-05-18 13:05:10 -0700
+Served asset /pages.js - 200 OK (0ms)
+
+
+Started GET "/assets/api_v1/places.js?body=1" for 192.168.0.3 at 2013-05-18 13:05:10 -0700
+Served asset /api_v1/places.js - 200 OK (0ms)
+
+
+Started GET "/assets/api_v1/places.js.js?body=1" for 192.168.0.3 at 2013-05-18 13:05:10 -0700
+Served asset /api_v1/places.js.js - 200 OK (0ms)
+
+
+Started GET "/assets/pages.js.js?body=1" for 192.168.0.3 at 2013-05-18 13:05:10 -0700
+Served asset /pages.js.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.3 at 2013-05-18 13:05:10 -0700
+Served asset /application.js - 200 OK (0ms)
+
+
+Started POST "/api/v1/registration/create" for 192.168.0.3 at 2013-05-18 13:15:17 -0700
+
+ActionController::RoutingError (No route matches [POST] "/api/v1/registration/create"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/stong-mac/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/api/v1/register" for 192.168.0.3 at 2013-05-18 13:15:58 -0700
+Processing by Api::V1::RegistrationsController#create as */*
+  Parameters: {"{\"helo\": \"world\"}"=>nil}
+WARNING: Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 137ms (Views: 0.2ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.4100ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=users selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (8.1940ms)
+
+
+Started POST "/api/v1/register" for 192.168.0.3 at 2013-05-18 13:18:08 -0700
+Processing by Api::V1::RegistrationsController#create as */*
+  Parameters: {"{\"helo\": \"world\"}"=>nil}
+WARNING: Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 174309ms (Views: 0.2ms)
+
+
+Started POST "/api/v1/register/create" for 192.168.0.3 at 2013-05-18 13:21:02 -0700
+
+ActionController::RoutingError (No route matches [POST] "/api/v1/register/create"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/stong-mac/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started POST "/api/v1/register/create" for 192.168.0.3 at 2013-05-18 13:23:07 -0700
+
+ActionController::RoutingError (No route matches [POST] "/api/v1/register/create"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/stong-mac/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/api/v1/register" for 192.168.0.3 at 2013-05-18 13:23:37 -0700
+Processing by Api::V1::RegistrationsController#create as */*
+  Parameters: {"{user: {email: \"rick.carlino@gmail.com\", password: \"password1\"}}"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 50466ms (Views: 0.3ms)
+
+
+Started POST "/api/v1/register" for 192.168.0.3 at 2013-05-18 13:24:27 -0700
+Processing by Api::V1::RegistrationsController#create as */*
+  Parameters: {"user: {email: \"rick.carlino@gmail.com\", password: \"password1\"}"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 15980ms (Views: 0.3ms)
+
+
+Started POST "/api/v1/register" for 192.168.0.3 at 2013-05-18 13:25:21 -0700
+Processing by Api::V1::RegistrationsController#create as */*
+  Parameters: {"user: {email: \"rick.carlino@gmail.com\", password: \"password1\"}"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 57482ms (Views: 0.3ms)
+
+
+Started POST "/api/v1/register" for 192.168.0.3 at 2013-05-18 13:26:21 -0700
+Processing by Api::V1::RegistrationsController#create as */*
+  Parameters: {"email"=>"rick.carlino@gmail.com", "password"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (32.8321ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=users selector={:email=>"rick.carlino@gmail.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.2880ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=users selector={"$query"=>{"authentication_token"=>"D5Xtxzp4z6kDc6B1LojH"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil (4.4413ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=radio_collar_development collection=users documents=[{"_id"=>"5197e400df86c02b6a000001", "email"=>"rick.carlino@gmail.com", "encrypted_password"=>"$2a$10$/nsydvr4HCP4KDEGcUga..PVWazsIOiaYdtFhEP5TlbxGOoX6ULri", "sign_in_count"=>0, "authentication_token"=>"D5Xtxzp4z6kDc6B1LojH", "updated_at"=>2013-05-18 20:26:40 UTC, "created_at"=>2013-05-18 20:26:40 UTC}] flags=[] (0.1762ms)
+Completed 200 OK in 19197ms (Views: 0.2ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7591ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=radio_collar_development command={:count=>"users", :query=>{}} (1.1230ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=users selector={"$query"=>{}, "$orderby"=>{:_id=>-1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.9758ms)
+
+
+Started POST "/api/v1/register" for 192.168.0.3 at 2013-05-18 13:36:38 -0700
+Processing by Api::V1::RegistrationsController#create as */*
+  Parameters: {"email"=>"rick.carlino@gmail.com", "password"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.3459ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=users selector={:email=>"rick.carlino@gmail.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3459ms)
+Completed 422 Unprocessable Entity in 132ms (Views: 0.2ms)
+
+
+Started POST "/api/v1/register" for 192.168.0.3 at 2013-05-18 13:37:27 -0700
+Processing by Api::V1::RegistrationsController#create as */*
+  Parameters: {"email"=>"rick.carlino@gmail.com", "password"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=users selector={:email=>"rick.carlino@gmail.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.4191ms)
+Completed 422 Unprocessable Entity in 76ms (Views: 0.1ms)
+
+
+Started POST "/api/v1/register" for 192.168.0.3 at 2013-05-18 13:42:25 -0700
+Processing by Api::V1::RegistrationsController#create as */*
+  Parameters: {"email"=>"rick.carlino@gmail.com", "password"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.4051ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=users selector={:email=>"rick.carlino@gmail.com"} flags=[] limit=1 skip=0 batch_size=nil fields={:_id=>1} (0.3216ms)
+Completed 422 Unprocessable Entity in 77ms (Views: 0.1ms)
+
+
+Started POST "/api/v1/sessions" for 192.168.0.3 at 2013-05-18 13:43:04 -0700
+
+ActionController::RoutingError (No route matches [POST] "/api/v1/sessions"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/stong-mac/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/api/v1/sessions" for 192.168.0.3 at 2013-05-18 13:43:18 -0700
+
+ActionController::RoutingError (No route matches [POST] "/api/v1/sessions"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/stong-mac/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/api/v1/sessions" for 192.168.0.3 at 2013-05-18 13:44:12 -0700
+
+ActionController::RoutingError (No route matches [POST] "/api/v1/sessions"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/stong-mac/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started POST "/api/v1/sessions" for 192.168.0.3 at 2013-05-18 13:44:16 -0700
+
+ActionController::RoutingError (No route matches [POST] "/api/v1/sessions"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/stong-mac/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/api/v1/sessions" for 192.168.0.3 at 2013-05-18 13:44:24 -0700
+
+ActionController::RoutingError (No route matches [POST] "/api/v1/sessions"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/stong-mac/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/api/v1/session" for 192.168.0.3 at 2013-05-18 13:44:33 -0700
+
+ActionController::RoutingError (No route matches [POST] "/api/v1/session"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/stong-mac/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/api/v1/sessions" for 192.168.0.3 at 2013-05-18 13:44:35 -0700
+
+ActionController::RoutingError (No route matches [POST] "/api/v1/sessions"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/stong-mac/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/api/v1/login" for 192.168.0.3 at 2013-05-18 13:45:25 -0700
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"email"=>"rick.carlino@gmail.com", "password"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=users selector={"$query"=>{"email"=>"rick.carlino@gmail.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.6080ms)
+Completed 200 OK in 8671ms (Views: 0.2ms)
+
+
+Started POST "/api/v1/login" for 192.168.0.3 at 2013-05-18 13:45:34 -0700
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"email"=>"rick.carlino@gmail.com", "password"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=users selector={"$query"=>{"email"=>"rick.carlino@gmail.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.7389ms)
+Completed 200 OK in 1160ms (Views: 0.2ms)
+
+
+Started POST "/api/v1/sessions" for 192.168.0.3 at 2013-05-18 13:58:48 -0700
+
+ActionController::RoutingError (No route matches [POST] "/api/v1/sessions"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.13) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.13) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.13) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.13) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/stong-mac/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/api/v1/login" for 192.168.0.3 at 2013-05-18 14:01:27 -0700
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"email"=>"rick.carlino@gmail.com", "password"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7851ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=users selector={"$query"=>{"email"=>"rick.carlino@gmail.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3510ms)
+Completed 200 OK in 11064ms (Views: 0.3ms)
+
+
+Started POST "/api/v1/login" for 192.168.0.3 at 2013-05-18 14:30:20 -0700
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"hi"=>nil}
+WARNING: Can't verify CSRF token authenticity
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.4160ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=users selector={"$query"=>{"email"=>""}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3901ms)
+Completed 401 Unauthorized in 46ms (Views: 0.2ms)
+
+
+Started POST "/api/v1/login" for 192.168.0.3 at 2013-05-18 14:31:34 -0700
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"user: rick.carlino@gmail.com, password: password1"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=users selector={"$query"=>{"email"=>""}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5093ms)
+Completed 401 Unauthorized in 1ms (Views: 0.2ms)
+
+
+Started POST "/api/v1/login" for 192.168.0.3 at 2013-05-18 14:40:02 -0700
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"user: rick.carlino@gmail.com, password: password1"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.4978ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=users selector={"$query"=>{"email"=>""}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4761ms)
+Completed 401 Unauthorized in 2ms (Views: 0.2ms)
+
+
+Started POST "/api/v1/login" for 192.168.0.3 at 2013-05-18 14:41:23 -0700
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"user: rick.carlino@gmail.com, password: password1"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=users selector={"$query"=>{"email"=>""}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.6027ms)
+Completed 401 Unauthorized in 2ms (Views: 0.2ms)
+
+
+Started POST "/api/v1/login" for 192.168.0.9 at 2013-05-18 14:46:58 -0700
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"user: rick.carlino@gmail.com, password: password1"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.4692ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=users selector={"$query"=>{"email"=>""}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4771ms)
+Completed 401 Unauthorized in 2ms (Views: 0.2ms)
+
+
+Started POST "/api/v1/login" for 192.168.0.9 at 2013-05-18 14:47:48 -0700
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"user: rick.carlino@gmail.com, password: password1"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=users selector={"$query"=>{"email"=>""}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5341ms)
+Completed 401 Unauthorized in 2ms (Views: 0.2ms)
+
+
+Started POST "/api/v1/login" for 192.168.0.9 at 2013-05-18 14:50:38 -0700
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"user: rick.carlino@gmail.com, password: password1"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=users selector={"$query"=>{"email"=>""}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5159ms)
+Completed 401 Unauthorized in 43254ms (Views: 0.2ms)
+
+
+Started POST "/api/v1/login" for 192.168.0.3 at 2013-05-18 14:51:32 -0700
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"{user: rick.carlino@gmail.com, password: password1}"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=users selector={"$query"=>{"email"=>""}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5953ms)
+Completed 401 Unauthorized in 14918ms (Views: 0.3ms)
+
+
+Started POST "/api/v1/login" for 192.168.0.3 at 2013-05-18 14:51:51 -0700
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"{user: rick.carlino@gmail.com, password: password1}"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5362ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=users selector={"$query"=>{"email"=>""}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4151ms)
+Completed 401 Unauthorized in 36529ms (Views: 0.2ms)
+
+
+Started POST "/api/v1/login" for 192.168.0.3 at 2013-05-18 14:52:28 -0700
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"user: rick.carlino@gmail.com, password: password1"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=users selector={"$query"=>{"email"=>""}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5839ms)
+Completed 401 Unauthorized in 4042ms (Views: 0.3ms)
+
+
+Started POST "/api/v1/login" for 192.168.0.3 at 2013-05-18 14:53:05 -0700
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"user"=>"rick.carlino@gmail.com", "password"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=users selector={"$query"=>{"email"=>""}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.6008ms)
+Completed 401 Unauthorized in 39001ms (Views: 0.2ms)
+
+
+Started POST "/api/v1/login" for 192.168.0.3 at 2013-05-18 14:54:28 -0700
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"email"=>"rick.carlino@gmail.com", "password"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=users selector={"$query"=>{"email"=>"rick.carlino@gmail.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5560ms)
+Completed 200 OK in 88ms (Views: 0.2ms)
+
+
+Started POST "/api/v1/login" for 192.168.0.3 at 2013-05-18 14:54:44 -0700
+Processing by Api::V1::SessionsController#create as */*
+  Parameters: {"email"=>"rick.carlino@gmail.com", "password"=>"[FILTERED]"}
+WARNING: Can't verify CSRF token authenticity
+  MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=users selector={"$query"=>{"email"=>"rick.carlino@gmail.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.7050ms)
+Completed 200 OK in 75ms (Views: 0.1ms)
