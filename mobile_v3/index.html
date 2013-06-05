@@ -7,23 +7,20 @@
   <script src="js/backbone.js" type="text/javascript"></script>
   <script type="text/javascript" src='js/backbone_dual_store.js'></script>
   <script type="text/javascript" src='js/app.js'></script>
+  <script type="text/javascript" src='js/templayed.js'></script>
 </head>
 <body>
 <header>Radio Collar</header>
-<section id="home">
-<p>Section line 1</p>
-<p>Section line 2</p>
-<p>Section line 3</p>
-<p>Section line 4</p>
-</section>
 <nav>Nav here...</nav>
+<section id='content'>
+</section>
 <script type="text/template" id="gpsCtrlTmpl">
   <form>
-      <input class="input" id="sendName" name="name" type="text" placeholder="name" value='<%= name %>'>
+      <input class="input" id="sendName" name="name" type="text" placeholder="name" value='{{#title}} {{ title }} {{/title}}'>
       <br>
-      <input class="input" id="lat" name="lat" type="text" placeholder="Waiting for longitude data..." value='<%= lat %>'>
+      <input class="input" id="lat" name="lat" type="text" placeholder="Waiting for longitude data..." value='pending'>
       <br>
-      <input class="input" id="lng" name="lng" type="text" placeholder="Waiting for latitude data..." value='<%= lng %>'>
+      <input class="input" id="lng" name="lng" type="text" placeholder="Waiting for latitude data..." value='pending'>
       <br>
       <a href="#" class="btn" id="send">Send</a>
   </form>
