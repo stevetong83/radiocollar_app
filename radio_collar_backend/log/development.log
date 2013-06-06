@@ -399,6 +399,299 @@ Processing by Api::V1::PlacesController#index as */*
 Completed 200 OK in 4149ms (Views: 0.1ms)
 
 
+<<<<<<< HEAD
+Started GET "/" for 127.0.0.1 at 2013-05-18 13:04:10 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.haml within layouts/application (11.5ms)
+Compiled jquery.js  (2ms)  (pid 7918)
+Compiled jquery_ujs.js  (0ms)  (pid 7918)
+Compiled application.js  (89ms)  (pid 7918)
+Completed 200 OK in 241ms (Views: 241.0ms)
+
+
+Started GET "/assets/api_v1/auth.css?body=1" for 127.0.0.1 at 2013-05-18 13:04:10 -0700
+Served asset /api_v1/auth.css - 200 OK (1ms)
+
+
+Started GET "/assets/api_v1/places.css?body=1" for 127.0.0.1 at 2013-05-18 13:04:10 -0700
+Served asset /api_v1/places.css - 200 OK (2ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-05-18 13:04:10 -0700
+Served asset /pages.css - 200 OK (1ms)
+
+
+Started GET "/assets/api_v1/auth.js?body=1" for 127.0.0.1 at 2013-05-18 13:04:10 -0700
+Served asset /api_v1/auth.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-18 13:04:10 -0700
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/api_v1/places.js?body=1" for 127.0.0.1 at 2013-05-18 13:04:10 -0700
+Served asset /api_v1/places.js - 200 OK (1ms)
+
+
+Started GET "/assets/api_v1/auth.js.js?body=1" for 127.0.0.1 at 2013-05-18 13:04:10 -0700
+Served asset /api_v1/auth.js.js - 200 OK (2ms)
+
+
+Started GET "/assets/api_v1/places.js.js?body=1" for 127.0.0.1 at 2013-05-18 13:04:10 -0700
+Served asset /api_v1/places.js.js - 200 OK (1ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-05-18 13:04:10 -0700
+Served asset /pages.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-18 13:04:10 -0700
+Served asset /jquery.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-18 13:04:10 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.js.js?body=1" for 127.0.0.1 at 2013-05-18 13:04:10 -0700
+Served asset /pages.js.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-18 13:04:10 -0700
+Served asset /application.js - 200 OK (10ms)
+
+
+Started GET "/" for 192.168.0.3 at 2013-05-18 13:05:02 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 65ms (Views: 64.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.3 at 2013-05-18 13:05:02 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/api_v1/auth.css?body=1" for 192.168.0.3 at 2013-05-18 13:05:02 -0700
+Served asset /api_v1/auth.css - 200 OK (0ms)
+
+
+Started GET "/assets/api_v1/places.css?body=1" for 192.168.0.3 at 2013-05-18 13:05:02 -0700
+Served asset /api_v1/places.css - 200 OK (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 192.168.0.3 at 2013-05-18 13:05:02 -0700
+Served asset /pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.3 at 2013-05-18 13:05:02 -0700
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.3 at 2013-05-18 13:05:02 -0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/api_v1/auth.js?body=1" for 192.168.0.3 at 2013-05-18 13:05:02 -0700
+Served asset /api_v1/auth.js - 200 OK (0ms)
+
+
+Started GET "/assets/api_v1/auth.js.js?body=1" for 192.168.0.3 at 2013-05-18 13:05:02 -0700
+Served asset /api_v1/auth.js.js - 200 OK (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 192.168.0.3 at 2013-05-18 13:05:02 -0700
+Served asset /pages.js - 200 OK (0ms)
+
+
+Started GET "/assets/api_v1/places.js?body=1" for 192.168.0.3 at 2013-05-18 13:05:02 -0700
+Served asset /api_v1/places.js - 200 OK (0ms)
+
+
+Started GET "/assets/api_v1/places.js.js?body=1" for 192.168.0.3 at 2013-05-18 13:05:02 -0700
+Served asset /api_v1/places.js.js - 200 OK (0ms)
+
+
+Started GET "/assets/pages.js.js?body=1" for 192.168.0.3 at 2013-05-18 13:05:02 -0700
+Served asset /pages.js.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.3 at 2013-05-18 13:05:02 -0700
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/" for 192.168.0.4 at 2013-05-18 13:05:07 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 61ms (Views: 61.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.4 at 2013-05-18 13:05:08 -0700
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/api_v1/auth.css?body=1" for 192.168.0.4 at 2013-05-18 13:05:08 -0700
+Served asset /api_v1/auth.css - 200 OK (0ms)
+
+
+Started GET "/assets/api_v1/places.css?body=1" for 192.168.0.4 at 2013-05-18 13:05:08 -0700
+Served asset /api_v1/places.css - 200 OK (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 192.168.0.4 at 2013-05-18 13:05:08 -0700
+Served asset /pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.4 at 2013-05-18 13:05:08 -0700
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.4 at 2013-05-18 13:05:08 -0700
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/api_v1/auth.js?body=1" for 192.168.0.4 at 2013-05-18 13:05:08 -0700
+Served asset /api_v1/auth.js - 200 OK (0ms)
+
+
+Started GET "/assets/api_v1/auth.js.js?body=1" for 192.168.0.4 at 2013-05-18 13:05:08 -0700
+Served asset /api_v1/auth.js.js - 200 OK (0ms)
+
+
+Started GET "/assets/api_v1/places.js?body=1" for 192.168.0.4 at 2013-05-18 13:05:08 -0700
+Served asset /api_v1/places.js - 200 OK (0ms)
+
+
+Started GET "/assets/api_v1/places.js.js?body=1" for 192.168.0.4 at 2013-05-18 13:05:08 -0700
+Served asset /api_v1/places.js.js - 200 OK (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 192.168.0.4 at 2013-05-18 13:05:08 -0700
+Served asset /pages.js - 200 OK (0ms)
+
+
+Started GET "/assets/pages.js.js?body=1" for 192.168.0.4 at 2013-05-18 13:05:08 -0700
+Served asset /pages.js.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.4 at 2013-05-18 13:05:08 -0700
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-18 14:28:42 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 48ms (Views: 48.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-18 14:28:42 -0700
+Served asset /application.css - 304 Not Modified (29ms)
+
+
+Started GET "/assets/api_v1/auth.css?body=1" for 127.0.0.1 at 2013-05-18 14:28:42 -0700
+Served asset /api_v1/auth.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/api_v1/places.css?body=1" for 127.0.0.1 at 2013-05-18 14:28:42 -0700
+Served asset /api_v1/places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-05-18 14:28:42 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-18 14:28:42 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-18 14:28:42 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/api_v1/auth.js?body=1" for 127.0.0.1 at 2013-05-18 14:28:42 -0700
+Served asset /api_v1/auth.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/api_v1/auth.js.js?body=1" for 127.0.0.1 at 2013-05-18 14:28:42 -0700
+Served asset /api_v1/auth.js.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/api_v1/places.js?body=1" for 127.0.0.1 at 2013-05-18 14:28:42 -0700
+Served asset /api_v1/places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/api_v1/places.js.js?body=1" for 127.0.0.1 at 2013-05-18 14:28:42 -0700
+Served asset /api_v1/places.js.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-05-18 14:28:42 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js.js?body=1" for 127.0.0.1 at 2013-05-18 14:28:42 -0700
+Served asset /pages.js.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-18 14:28:42 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-18 14:41:21 -0700
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.haml within layouts/application (0.1ms)
+Completed 200 OK in 33ms (Views: 32.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-18 14:41:21 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/api_v1/auth.css?body=1" for 127.0.0.1 at 2013-05-18 14:41:21 -0700
+Served asset /api_v1/auth.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/api_v1/places.css?body=1" for 127.0.0.1 at 2013-05-18 14:41:21 -0700
+Served asset /api_v1/places.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2013-05-18 14:41:21 -0700
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-18 14:41:21 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-18 14:41:21 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/api_v1/auth.js?body=1" for 127.0.0.1 at 2013-05-18 14:41:21 -0700
+Served asset /api_v1/auth.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/api_v1/auth.js.js?body=1" for 127.0.0.1 at 2013-05-18 14:41:21 -0700
+Served asset /api_v1/auth.js.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/api_v1/places.js?body=1" for 127.0.0.1 at 2013-05-18 14:41:21 -0700
+Served asset /api_v1/places.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/api_v1/places.js.js?body=1" for 127.0.0.1 at 2013-05-18 14:41:21 -0700
+Served asset /api_v1/places.js.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2013-05-18 14:41:21 -0700
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js.js?body=1" for 127.0.0.1 at 2013-05-18 14:41:21 -0700
+Served asset /pages.js.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-18 14:41:21 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+=======
 Started GET "/" for 127.0.0.1 at 2013-05-09 18:41:00 -0700
 Processing by PagesController#index as HTML
   Rendered pages/index.html.haml within layouts/application (3.4ms)
@@ -510,6 +803,7 @@ Processing by MongoidShortener::ShortenedUrlsController#translate as HTML
   MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={"$query"=>{"unique_key"=>"5"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3870ms)
   MOPED: 127.0.0.1:27017 UPDATE       database=radio_collar_development collection=mongoid_shortener_shortened_urls selector={"_id"=>"5192a538df86c0c5cd000001"} update={"$inc"=>{"use_count"=>1}} flags=[] (0.1249ms)
 Completed 301 Moved Permanently in 4ms
+<<<<<<< HEAD
 
 
 Started GET "/" for 127.0.0.1 at 2013-05-18 13:04:20 -0700
@@ -1287,3 +1581,6 @@ Processing by Api::V1::SessionsController#create as */*
 WARNING: Can't verify CSRF token authenticity
   MOPED: 127.0.0.1:27017 QUERY        database=radio_collar_development collection=users selector={"$query"=>{"email"=>"rick.carlino@gmail.com"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.7050ms)
 Completed 200 OK in 75ms (Views: 0.1ms)
+=======
+>>>>>>> 2899fdd95519c9a1874faf215c9a507b7824f1ab
+>>>>>>> 96c02183f8f16dd4041fdc1e689f263785a10ef7

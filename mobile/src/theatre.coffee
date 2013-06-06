@@ -1,5 +1,4 @@
 class Theatre
-  #Remember: Stages are passed as selector ID strings's, not JQuery selectors.
   constructor: ({stage, firstScene, backStage}) ->
     stage         ?= '#front_stage'
     firstScene    ?= false
@@ -29,6 +28,8 @@ class Theatre
       @stage.html($(scene).html()).fadeIn(200)
 
   #TODO: Add support for:
+    #Remember: Stages are passed as selector ID strings's, not JQuery selectors.
+    #TODO: Refactor the history feature to use HTML5 history API.
     #state saving
     #underscore templates
 
