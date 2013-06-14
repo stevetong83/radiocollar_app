@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe "Mobile Sessions" do
+  #TODO: Put in spec_helper
   def post_login params = {empty: :empty}
     post "/api/v1/login", Hash[params].to_json,{"CONTENT_TYPE" => "application/json"}
   end
