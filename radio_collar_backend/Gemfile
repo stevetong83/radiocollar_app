@@ -40,5 +40,5 @@ gem 'jbuilder'
 gem "mongoid_shortener"
 gem "yab62", require: "yab62"
 
-
+gem 'rack-jsonp-middleware'
 

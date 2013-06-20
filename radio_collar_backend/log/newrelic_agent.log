@@ -1964,6 +1964,7 @@
 [05/18/13 14:00:55 -0700 Stephens-MacBook-Pro.local (11926)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
 =======
 >>>>>>> 2899fdd95519c9a1874faf215c9a507b7824f1ab
+<<<<<<< HEAD
 >>>>>>> 96c02183f8f16dd4041fdc1e689f263785a10ef7
 [06/10/13 17:53:26 -0700 Stephens-MacBook-Pro.local (18227)] ERROR : Unable to read configuration file : can't convert nil into String
 [06/10/13 17:53:26 -0700 Stephens-MacBook-Pro.local (18227)] INFO : Starting the New Relic Agent.
@@ -1993,3 +1994,327 @@
 [06/20/13 08:22:06 -0700 Stephens-MacBook-Pro.local (19688)] INFO : Installing Rails3 Error instrumentation
 [06/20/13 08:22:06 -0700 Stephens-MacBook-Pro.local (19688)] INFO : Finished instrumentation
 [06/20/13 08:22:06 -0700 Stephens-MacBook-Pro.local (19688)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+=======
+[06/14/13 07:03:47 -0700 Rick1.local (693)] ERROR : Unable to read configuration file : can't convert nil into String
+[06/14/13 07:03:47 -0700 Rick1.local (693)] INFO : Starting the New Relic Agent.
+[06/14/13 07:03:47 -0700 Rick1.local (693)] INFO : Environment: development
+[06/14/13 07:03:47 -0700 Rick1.local (693)] INFO : Dispatcher: thin
+[06/14/13 07:03:47 -0700 Rick1.local (693)] INFO : Application: development
+[06/14/13 07:03:47 -0700 Rick1.local (693)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[06/14/13 07:03:47 -0700 Rick1.local (693)] INFO : Installing DelayedJob instrumentation hooks
+[06/14/13 07:03:47 -0700 Rick1.local (693)] INFO : Installing DelayedJob instrumentation
+[06/14/13 07:03:47 -0700 Rick1.local (693)] INFO : Installing Net instrumentation
+[06/14/13 07:03:47 -0700 Rick1.local (693)] INFO : Installing Rails 3 Controller instrumentation
+[06/14/13 07:03:47 -0700 Rick1.local (693)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/14/13 07:03:47 -0700 Rick1.local (693)] INFO : Installing Rails3 Error instrumentation
+[06/14/13 07:03:47 -0700 Rick1.local (693)] INFO : Finished instrumentation
+[06/14/13 07:03:47 -0700 Rick1.local (693)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[06/14/13 07:08:20 -0700 Rick1.local (724)] ERROR : Unable to read configuration file : can't convert nil into String
+[06/14/13 07:08:20 -0700 Rick1.local (724)] INFO : Starting the New Relic Agent.
+[06/14/13 07:08:20 -0700 Rick1.local (724)] INFO : Environment: development
+[06/14/13 07:08:20 -0700 Rick1.local (724)] INFO : Dispatcher: thin
+[06/14/13 07:08:20 -0700 Rick1.local (724)] INFO : Application: development
+[06/14/13 07:08:20 -0700 Rick1.local (724)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[06/14/13 07:08:20 -0700 Rick1.local (724)] INFO : Installing DelayedJob instrumentation hooks
+[06/14/13 07:08:20 -0700 Rick1.local (724)] INFO : Installing DelayedJob instrumentation
+[06/14/13 07:08:20 -0700 Rick1.local (724)] INFO : Installing Net instrumentation
+[06/14/13 07:08:20 -0700 Rick1.local (724)] INFO : Installing Rails 3 Controller instrumentation
+[06/14/13 07:08:20 -0700 Rick1.local (724)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/14/13 07:08:20 -0700 Rick1.local (724)] INFO : Installing Rails3 Error instrumentation
+[06/14/13 07:08:20 -0700 Rick1.local (724)] INFO : Finished instrumentation
+[06/14/13 07:08:20 -0700 Rick1.local (724)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[06/14/13 07:10:28 -0700 Rick1.local (734)] ERROR : Unable to read configuration file : can't convert nil into String
+[06/14/13 07:10:28 -0700 Rick1.local (734)] INFO : Starting the New Relic Agent.
+[06/14/13 07:10:28 -0700 Rick1.local (734)] INFO : Environment: development
+[06/14/13 07:10:28 -0700 Rick1.local (734)] INFO : Dispatcher: thin
+[06/14/13 07:10:28 -0700 Rick1.local (734)] INFO : Application: development
+[06/14/13 07:10:28 -0700 Rick1.local (734)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[06/14/13 07:10:28 -0700 Rick1.local (734)] INFO : Installing DelayedJob instrumentation hooks
+[06/14/13 07:10:28 -0700 Rick1.local (734)] INFO : Installing DelayedJob instrumentation
+[06/14/13 07:10:28 -0700 Rick1.local (734)] INFO : Installing Net instrumentation
+[06/14/13 07:10:28 -0700 Rick1.local (734)] INFO : Installing Rails 3 Controller instrumentation
+[06/14/13 07:10:28 -0700 Rick1.local (734)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/14/13 07:10:28 -0700 Rick1.local (734)] INFO : Installing Rails3 Error instrumentation
+[06/14/13 07:10:28 -0700 Rick1.local (734)] INFO : Finished instrumentation
+[06/14/13 07:10:28 -0700 Rick1.local (734)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[06/14/13 07:11:26 -0700 Rick1.local (741)] ERROR : Unable to read configuration file : can't convert nil into String
+[06/14/13 07:11:26 -0700 Rick1.local (741)] INFO : Starting the New Relic Agent.
+[06/14/13 07:11:26 -0700 Rick1.local (741)] INFO : Environment: development
+[06/14/13 07:11:26 -0700 Rick1.local (741)] INFO : Dispatcher: thin
+[06/14/13 07:11:26 -0700 Rick1.local (741)] INFO : Application: development
+[06/14/13 07:11:26 -0700 Rick1.local (741)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[06/14/13 07:11:26 -0700 Rick1.local (741)] INFO : Installing DelayedJob instrumentation hooks
+[06/14/13 07:11:26 -0700 Rick1.local (741)] INFO : Installing DelayedJob instrumentation
+[06/14/13 07:11:26 -0700 Rick1.local (741)] INFO : Installing Net instrumentation
+[06/14/13 07:11:26 -0700 Rick1.local (741)] INFO : Installing Rails 3 Controller instrumentation
+[06/14/13 07:11:26 -0700 Rick1.local (741)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/14/13 07:11:26 -0700 Rick1.local (741)] INFO : Installing Rails3 Error instrumentation
+[06/14/13 07:11:26 -0700 Rick1.local (741)] INFO : Finished instrumentation
+[06/14/13 07:11:26 -0700 Rick1.local (741)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[06/19/13 06:19:52 -0700 Rick1.local (5467)] ERROR : Unable to read configuration file : can't convert nil into String
+[06/19/13 06:19:52 -0700 Rick1.local (5467)] INFO : Starting the New Relic Agent.
+[06/19/13 06:19:52 -0700 Rick1.local (5467)] INFO : Environment: test
+[06/19/13 06:19:52 -0700 Rick1.local (5467)] INFO : Dispatcher: thin
+[06/19/13 06:19:52 -0700 Rick1.local (5467)] INFO : Application: test
+[06/19/13 06:19:52 -0700 Rick1.local (5467)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'test'
+[06/19/13 06:19:52 -0700 Rick1.local (5467)] INFO : Installing DelayedJob instrumentation hooks
+[06/19/13 06:19:52 -0700 Rick1.local (5467)] INFO : Installing DelayedJob instrumentation
+[06/19/13 06:19:52 -0700 Rick1.local (5467)] INFO : Installing Net instrumentation
+[06/19/13 06:19:52 -0700 Rick1.local (5467)] INFO : Installing Rails 3 Controller instrumentation
+[06/19/13 06:19:52 -0700 Rick1.local (5467)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/19/13 06:19:52 -0700 Rick1.local (5467)] INFO : Installing Rails3 Error instrumentation
+[06/19/13 06:19:52 -0700 Rick1.local (5467)] INFO : Finished instrumentation
+[06/19/13 06:19:52 -0700 Rick1.local (5467)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[06/19/13 06:21:24 -0700 Rick1.local (5472)] ERROR : Unable to read configuration file : can't convert nil into String
+[06/19/13 06:21:24 -0700 Rick1.local (5472)] INFO : Starting the New Relic Agent.
+[06/19/13 06:21:24 -0700 Rick1.local (5472)] INFO : Environment: development
+[06/19/13 06:21:24 -0700 Rick1.local (5472)] INFO : Dispatcher: thin
+[06/19/13 06:21:24 -0700 Rick1.local (5472)] INFO : Application: development
+[06/19/13 06:21:24 -0700 Rick1.local (5472)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[06/19/13 06:21:24 -0700 Rick1.local (5472)] INFO : Installing DelayedJob instrumentation hooks
+[06/19/13 06:21:24 -0700 Rick1.local (5472)] INFO : Installing DelayedJob instrumentation
+[06/19/13 06:21:24 -0700 Rick1.local (5472)] INFO : Installing Net instrumentation
+[06/19/13 06:21:24 -0700 Rick1.local (5472)] INFO : Installing Rails 3 Controller instrumentation
+[06/19/13 06:21:24 -0700 Rick1.local (5472)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/19/13 06:21:24 -0700 Rick1.local (5472)] INFO : Installing Rails3 Error instrumentation
+[06/19/13 06:21:24 -0700 Rick1.local (5472)] INFO : Finished instrumentation
+[06/19/13 06:21:24 -0700 Rick1.local (5472)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[06/19/13 06:22:50 -0700 Rick1.local (5493)] ERROR : Unable to read configuration file : can't convert nil into String
+[06/19/13 06:22:50 -0700 Rick1.local (5493)] INFO : Starting the New Relic Agent.
+[06/19/13 06:22:50 -0700 Rick1.local (5493)] INFO : Environment: test
+[06/19/13 06:22:50 -0700 Rick1.local (5493)] INFO : Dispatcher: thin
+[06/19/13 06:22:50 -0700 Rick1.local (5493)] INFO : Application: test
+[06/19/13 06:22:50 -0700 Rick1.local (5493)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'test'
+[06/19/13 06:22:50 -0700 Rick1.local (5493)] INFO : Installing DelayedJob instrumentation hooks
+[06/19/13 06:22:50 -0700 Rick1.local (5493)] INFO : Installing DelayedJob instrumentation
+[06/19/13 06:22:50 -0700 Rick1.local (5493)] INFO : Installing Net instrumentation
+[06/19/13 06:22:50 -0700 Rick1.local (5493)] INFO : Installing Rails 3 Controller instrumentation
+[06/19/13 06:22:50 -0700 Rick1.local (5493)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/19/13 06:22:50 -0700 Rick1.local (5493)] INFO : Installing Rails3 Error instrumentation
+[06/19/13 06:22:50 -0700 Rick1.local (5493)] INFO : Finished instrumentation
+[06/19/13 06:22:50 -0700 Rick1.local (5493)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[06/19/13 06:23:53 -0700 Rick1.local (5510)] ERROR : Unable to read configuration file : can't convert nil into String
+[06/19/13 06:23:53 -0700 Rick1.local (5510)] INFO : Starting the New Relic Agent.
+[06/19/13 06:23:53 -0700 Rick1.local (5510)] INFO : Environment: test
+[06/19/13 06:23:53 -0700 Rick1.local (5510)] INFO : Dispatcher: thin
+[06/19/13 06:23:53 -0700 Rick1.local (5510)] INFO : Application: test
+[06/19/13 06:23:53 -0700 Rick1.local (5510)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'test'
+[06/19/13 06:23:53 -0700 Rick1.local (5510)] INFO : Installing DelayedJob instrumentation hooks
+[06/19/13 06:23:53 -0700 Rick1.local (5510)] INFO : Installing DelayedJob instrumentation
+[06/19/13 06:23:53 -0700 Rick1.local (5510)] INFO : Installing Net instrumentation
+[06/19/13 06:23:53 -0700 Rick1.local (5510)] INFO : Installing Rails 3 Controller instrumentation
+[06/19/13 06:23:53 -0700 Rick1.local (5510)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/19/13 06:23:53 -0700 Rick1.local (5510)] INFO : Installing Rails3 Error instrumentation
+[06/19/13 06:23:53 -0700 Rick1.local (5510)] INFO : Finished instrumentation
+[06/19/13 06:23:53 -0700 Rick1.local (5510)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[06/19/13 06:24:31 -0700 Rick1.local (5516)] ERROR : Unable to read configuration file : can't convert nil into String
+[06/19/13 06:24:31 -0700 Rick1.local (5516)] INFO : Starting the New Relic Agent.
+[06/19/13 06:24:31 -0700 Rick1.local (5516)] INFO : Environment: test
+[06/19/13 06:24:31 -0700 Rick1.local (5516)] INFO : Dispatcher: thin
+[06/19/13 06:24:31 -0700 Rick1.local (5516)] INFO : Application: test
+[06/19/13 06:24:31 -0700 Rick1.local (5516)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'test'
+[06/19/13 06:24:31 -0700 Rick1.local (5516)] INFO : Installing DelayedJob instrumentation hooks
+[06/19/13 06:24:31 -0700 Rick1.local (5516)] INFO : Installing DelayedJob instrumentation
+[06/19/13 06:24:31 -0700 Rick1.local (5516)] INFO : Installing Net instrumentation
+[06/19/13 06:24:31 -0700 Rick1.local (5516)] INFO : Installing Rails 3 Controller instrumentation
+[06/19/13 06:24:31 -0700 Rick1.local (5516)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/19/13 06:24:31 -0700 Rick1.local (5516)] INFO : Installing Rails3 Error instrumentation
+[06/19/13 06:24:31 -0700 Rick1.local (5516)] INFO : Finished instrumentation
+[06/19/13 06:24:31 -0700 Rick1.local (5516)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[06/19/13 06:26:57 -0700 Rick1.local (5525)] ERROR : Unable to read configuration file : can't convert nil into String
+[06/19/13 06:26:57 -0700 Rick1.local (5525)] INFO : Starting the New Relic Agent.
+[06/19/13 06:26:57 -0700 Rick1.local (5525)] INFO : Environment: test
+[06/19/13 06:26:57 -0700 Rick1.local (5525)] INFO : Dispatcher: thin
+[06/19/13 06:26:57 -0700 Rick1.local (5525)] INFO : Application: test
+[06/19/13 06:26:57 -0700 Rick1.local (5525)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'test'
+[06/19/13 06:26:57 -0700 Rick1.local (5525)] INFO : Installing DelayedJob instrumentation hooks
+[06/19/13 06:26:57 -0700 Rick1.local (5525)] INFO : Installing DelayedJob instrumentation
+[06/19/13 06:26:57 -0700 Rick1.local (5525)] INFO : Installing Net instrumentation
+[06/19/13 06:26:57 -0700 Rick1.local (5525)] INFO : Installing Rails 3 Controller instrumentation
+[06/19/13 06:26:57 -0700 Rick1.local (5525)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/19/13 06:26:57 -0700 Rick1.local (5525)] INFO : Installing Rails3 Error instrumentation
+[06/19/13 06:26:57 -0700 Rick1.local (5525)] INFO : Finished instrumentation
+[06/19/13 06:26:57 -0700 Rick1.local (5525)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[06/19/13 06:31:46 -0700 Rick1.local (5569)] ERROR : Unable to read configuration file : can't convert nil into String
+[06/19/13 06:31:46 -0700 Rick1.local (5569)] INFO : Starting the New Relic Agent.
+[06/19/13 06:31:46 -0700 Rick1.local (5569)] INFO : Environment: development
+[06/19/13 06:31:46 -0700 Rick1.local (5569)] INFO : Dispatcher: thin
+[06/19/13 06:31:46 -0700 Rick1.local (5569)] INFO : Application: development
+[06/19/13 06:31:46 -0700 Rick1.local (5569)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[06/19/13 06:31:46 -0700 Rick1.local (5569)] INFO : Installing DelayedJob instrumentation hooks
+[06/19/13 06:31:46 -0700 Rick1.local (5569)] INFO : Installing DelayedJob instrumentation
+[06/19/13 06:31:46 -0700 Rick1.local (5569)] INFO : Installing Net instrumentation
+[06/19/13 06:31:46 -0700 Rick1.local (5569)] INFO : Installing Rails 3 Controller instrumentation
+[06/19/13 06:31:46 -0700 Rick1.local (5569)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/19/13 06:31:46 -0700 Rick1.local (5569)] INFO : Installing Rails3 Error instrumentation
+[06/19/13 06:31:46 -0700 Rick1.local (5569)] INFO : Finished instrumentation
+[06/19/13 06:31:46 -0700 Rick1.local (5569)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[06/19/13 06:32:52 -0700 Rick1.local (5579)] ERROR : Unable to read configuration file : can't convert nil into String
+[06/19/13 06:32:52 -0700 Rick1.local (5579)] INFO : Starting the New Relic Agent.
+[06/19/13 06:32:52 -0700 Rick1.local (5579)] INFO : Environment: development
+[06/19/13 06:32:52 -0700 Rick1.local (5579)] INFO : Dispatcher: thin
+[06/19/13 06:32:52 -0700 Rick1.local (5579)] INFO : Application: development
+[06/19/13 06:32:52 -0700 Rick1.local (5579)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[06/19/13 06:32:52 -0700 Rick1.local (5579)] INFO : Installing DelayedJob instrumentation hooks
+[06/19/13 06:32:52 -0700 Rick1.local (5579)] INFO : Installing DelayedJob instrumentation
+[06/19/13 06:32:52 -0700 Rick1.local (5579)] INFO : Installing Net instrumentation
+[06/19/13 06:32:52 -0700 Rick1.local (5579)] INFO : Installing Rails 3 Controller instrumentation
+[06/19/13 06:32:52 -0700 Rick1.local (5579)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/19/13 06:32:52 -0700 Rick1.local (5579)] INFO : Installing Rails3 Error instrumentation
+[06/19/13 06:32:52 -0700 Rick1.local (5579)] INFO : Finished instrumentation
+[06/19/13 06:32:52 -0700 Rick1.local (5579)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[06/19/13 06:38:46 -0700 Rick1.local (5776)] ERROR : Unable to read configuration file : can't convert nil into String
+[06/19/13 06:38:46 -0700 Rick1.local (5776)] INFO : Starting the New Relic Agent.
+[06/19/13 06:38:46 -0700 Rick1.local (5776)] INFO : Environment: development
+[06/19/13 06:38:46 -0700 Rick1.local (5776)] INFO : Dispatcher: thin
+[06/19/13 06:38:46 -0700 Rick1.local (5776)] INFO : Application: development
+[06/19/13 06:38:46 -0700 Rick1.local (5776)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[06/19/13 06:38:46 -0700 Rick1.local (5776)] INFO : Installing DelayedJob instrumentation hooks
+[06/19/13 06:38:46 -0700 Rick1.local (5776)] INFO : Installing DelayedJob instrumentation
+[06/19/13 06:38:46 -0700 Rick1.local (5776)] INFO : Installing Net instrumentation
+[06/19/13 06:38:46 -0700 Rick1.local (5776)] INFO : Installing Rails 3 Controller instrumentation
+[06/19/13 06:38:46 -0700 Rick1.local (5776)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/19/13 06:38:46 -0700 Rick1.local (5776)] INFO : Installing Rails3 Error instrumentation
+[06/19/13 06:38:46 -0700 Rick1.local (5776)] INFO : Finished instrumentation
+[06/19/13 06:38:46 -0700 Rick1.local (5776)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[06/19/13 06:39:06 -0700 Rick1.local (5781)] ERROR : Unable to read configuration file : can't convert nil into String
+[06/19/13 06:39:06 -0700 Rick1.local (5781)] INFO : Starting the New Relic Agent.
+[06/19/13 06:39:06 -0700 Rick1.local (5781)] INFO : Environment: development
+[06/19/13 06:39:06 -0700 Rick1.local (5781)] INFO : Dispatcher: thin
+[06/19/13 06:39:06 -0700 Rick1.local (5781)] INFO : Application: development
+[06/19/13 06:39:06 -0700 Rick1.local (5781)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[06/19/13 06:39:06 -0700 Rick1.local (5781)] INFO : Installing DelayedJob instrumentation hooks
+[06/19/13 06:39:06 -0700 Rick1.local (5781)] INFO : Installing DelayedJob instrumentation
+[06/19/13 06:39:06 -0700 Rick1.local (5781)] INFO : Installing Net instrumentation
+[06/19/13 06:39:06 -0700 Rick1.local (5781)] INFO : Installing Rails 3 Controller instrumentation
+[06/19/13 06:39:06 -0700 Rick1.local (5781)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/19/13 06:39:06 -0700 Rick1.local (5781)] INFO : Installing Rails3 Error instrumentation
+[06/19/13 06:39:06 -0700 Rick1.local (5781)] INFO : Finished instrumentation
+[06/19/13 06:39:06 -0700 Rick1.local (5781)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[06/19/13 17:21:04 -0700 Rick1.local (9152)] ERROR : Unable to read configuration file : can't convert nil into String
+[06/19/13 17:21:04 -0700 Rick1.local (9152)] INFO : Starting the New Relic Agent.
+[06/19/13 17:21:04 -0700 Rick1.local (9152)] INFO : Environment: development
+[06/19/13 17:21:04 -0700 Rick1.local (9152)] INFO : Dispatcher: thin
+[06/19/13 17:21:04 -0700 Rick1.local (9152)] INFO : Application: development
+[06/19/13 17:21:04 -0700 Rick1.local (9152)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[06/19/13 17:21:04 -0700 Rick1.local (9152)] INFO : Installing DelayedJob instrumentation hooks
+[06/19/13 17:21:04 -0700 Rick1.local (9152)] INFO : Installing DelayedJob instrumentation
+[06/19/13 17:21:04 -0700 Rick1.local (9152)] INFO : Installing Net instrumentation
+[06/19/13 17:21:04 -0700 Rick1.local (9152)] INFO : Installing Rails 3 Controller instrumentation
+[06/19/13 17:21:04 -0700 Rick1.local (9152)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/19/13 17:21:04 -0700 Rick1.local (9152)] INFO : Installing Rails3 Error instrumentation
+[06/19/13 17:21:04 -0700 Rick1.local (9152)] INFO : Finished instrumentation
+[06/19/13 17:21:04 -0700 Rick1.local (9152)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[06/19/13 17:28:36 -0700 Rick1.local (9166)] ERROR : Unable to read configuration file : can't convert nil into String
+[06/19/13 17:28:36 -0700 Rick1.local (9166)] INFO : Starting the New Relic Agent.
+[06/19/13 17:28:36 -0700 Rick1.local (9166)] INFO : Environment: development
+[06/19/13 17:28:36 -0700 Rick1.local (9166)] INFO : Dispatcher: thin
+[06/19/13 17:28:36 -0700 Rick1.local (9166)] INFO : Application: development
+[06/19/13 17:28:36 -0700 Rick1.local (9166)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[06/19/13 17:28:36 -0700 Rick1.local (9166)] INFO : Installing DelayedJob instrumentation hooks
+[06/19/13 17:28:36 -0700 Rick1.local (9166)] INFO : Installing DelayedJob instrumentation
+[06/19/13 17:28:36 -0700 Rick1.local (9166)] INFO : Installing Net instrumentation
+[06/19/13 17:28:36 -0700 Rick1.local (9166)] INFO : Installing Rails 3 Controller instrumentation
+[06/19/13 17:28:36 -0700 Rick1.local (9166)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/19/13 17:28:36 -0700 Rick1.local (9166)] INFO : Installing Rails3 Error instrumentation
+[06/19/13 17:28:36 -0700 Rick1.local (9166)] INFO : Finished instrumentation
+[06/19/13 17:28:36 -0700 Rick1.local (9166)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[06/19/13 19:45:51 -0700 Rick1.local (855)] ERROR : Unable to read configuration file : can't convert nil into String
+[06/19/13 19:45:51 -0700 Rick1.local (855)] INFO : Starting the New Relic Agent.
+[06/19/13 19:45:51 -0700 Rick1.local (855)] INFO : Environment: development
+[06/19/13 19:45:51 -0700 Rick1.local (855)] INFO : Dispatcher: thin
+[06/19/13 19:45:51 -0700 Rick1.local (855)] INFO : Application: development
+[06/19/13 19:45:51 -0700 Rick1.local (855)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[06/19/13 19:45:51 -0700 Rick1.local (855)] INFO : Installing DelayedJob instrumentation hooks
+[06/19/13 19:45:51 -0700 Rick1.local (855)] INFO : Installing DelayedJob instrumentation
+[06/19/13 19:45:51 -0700 Rick1.local (855)] INFO : Installing Net instrumentation
+[06/19/13 19:45:51 -0700 Rick1.local (855)] INFO : Installing Rails 3 Controller instrumentation
+[06/19/13 19:45:51 -0700 Rick1.local (855)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/19/13 19:45:51 -0700 Rick1.local (855)] INFO : Installing Rails3 Error instrumentation
+[06/19/13 19:45:51 -0700 Rick1.local (855)] INFO : Finished instrumentation
+[06/19/13 19:45:51 -0700 Rick1.local (855)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[06/19/13 19:47:09 -0700 Rick1.local (864)] ERROR : Unable to read configuration file : can't convert nil into String
+[06/19/13 19:47:09 -0700 Rick1.local (864)] INFO : Starting the New Relic Agent.
+[06/19/13 19:47:09 -0700 Rick1.local (864)] INFO : Environment: development
+[06/19/13 19:47:09 -0700 Rick1.local (864)] INFO : Dispatcher: thin
+[06/19/13 19:47:09 -0700 Rick1.local (864)] INFO : Application: development
+[06/19/13 19:47:09 -0700 Rick1.local (864)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[06/19/13 19:47:09 -0700 Rick1.local (864)] INFO : Installing DelayedJob instrumentation hooks
+[06/19/13 19:47:09 -0700 Rick1.local (864)] INFO : Installing DelayedJob instrumentation
+[06/19/13 19:47:09 -0700 Rick1.local (864)] INFO : Installing Net instrumentation
+[06/19/13 19:47:09 -0700 Rick1.local (864)] INFO : Installing Rails 3 Controller instrumentation
+[06/19/13 19:47:09 -0700 Rick1.local (864)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/19/13 19:47:09 -0700 Rick1.local (864)] INFO : Installing Rails3 Error instrumentation
+[06/19/13 19:47:09 -0700 Rick1.local (864)] INFO : Finished instrumentation
+[06/19/13 19:47:09 -0700 Rick1.local (864)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[06/19/13 19:47:42 -0700 Rick1.local (872)] ERROR : Unable to read configuration file : can't convert nil into String
+[06/19/13 19:47:42 -0700 Rick1.local (872)] INFO : Starting the New Relic Agent.
+[06/19/13 19:47:42 -0700 Rick1.local (872)] INFO : Environment: development
+[06/19/13 19:47:42 -0700 Rick1.local (872)] INFO : Dispatcher: thin
+[06/19/13 19:47:42 -0700 Rick1.local (872)] INFO : Application: development
+[06/19/13 19:47:42 -0700 Rick1.local (872)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[06/19/13 19:47:42 -0700 Rick1.local (872)] INFO : Installing DelayedJob instrumentation hooks
+[06/19/13 19:47:42 -0700 Rick1.local (872)] INFO : Installing DelayedJob instrumentation
+[06/19/13 19:47:42 -0700 Rick1.local (872)] INFO : Installing Net instrumentation
+[06/19/13 19:47:42 -0700 Rick1.local (872)] INFO : Installing Rails 3 Controller instrumentation
+[06/19/13 19:47:42 -0700 Rick1.local (872)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/19/13 19:47:42 -0700 Rick1.local (872)] INFO : Installing Rails3 Error instrumentation
+[06/19/13 19:47:42 -0700 Rick1.local (872)] INFO : Finished instrumentation
+[06/19/13 19:47:42 -0700 Rick1.local (872)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[06/19/13 20:09:19 -0700 Rick1.local (1064)] ERROR : Unable to read configuration file : can't convert nil into String
+[06/19/13 20:09:19 -0700 Rick1.local (1064)] INFO : Starting the New Relic Agent.
+[06/19/13 20:09:19 -0700 Rick1.local (1064)] INFO : Environment: development
+[06/19/13 20:09:19 -0700 Rick1.local (1064)] INFO : Dispatcher: thin
+[06/19/13 20:09:19 -0700 Rick1.local (1064)] INFO : Application: development
+[06/19/13 20:09:19 -0700 Rick1.local (1064)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[06/19/13 20:09:19 -0700 Rick1.local (1064)] INFO : Installing DelayedJob instrumentation hooks
+[06/19/13 20:09:19 -0700 Rick1.local (1064)] INFO : Installing DelayedJob instrumentation
+[06/19/13 20:09:19 -0700 Rick1.local (1064)] INFO : Installing Net instrumentation
+[06/19/13 20:09:19 -0700 Rick1.local (1064)] INFO : Installing Rails 3 Controller instrumentation
+[06/19/13 20:09:19 -0700 Rick1.local (1064)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/19/13 20:09:19 -0700 Rick1.local (1064)] INFO : Installing Rails3 Error instrumentation
+[06/19/13 20:09:19 -0700 Rick1.local (1064)] INFO : Finished instrumentation
+[06/19/13 20:09:19 -0700 Rick1.local (1064)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[06/19/13 21:38:36 -0700 Rick1.local (1273)] ERROR : Unable to read configuration file : can't convert nil into String
+[06/19/13 21:38:36 -0700 Rick1.local (1273)] INFO : Starting the New Relic Agent.
+[06/19/13 21:38:36 -0700 Rick1.local (1273)] INFO : Environment: production
+[06/19/13 21:38:36 -0700 Rick1.local (1273)] INFO : Dispatcher: thin
+[06/19/13 21:38:36 -0700 Rick1.local (1273)] INFO : Application: production
+[06/19/13 21:38:36 -0700 Rick1.local (1273)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'production'
+[06/19/13 21:38:36 -0700 Rick1.local (1273)] INFO : Installing DelayedJob instrumentation hooks
+[06/19/13 21:38:36 -0700 Rick1.local (1273)] INFO : Installing DelayedJob instrumentation
+[06/19/13 21:38:36 -0700 Rick1.local (1273)] INFO : Installing Net instrumentation
+[06/19/13 21:38:36 -0700 Rick1.local (1273)] INFO : Installing Rails 3 Controller instrumentation
+[06/19/13 21:38:36 -0700 Rick1.local (1273)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/19/13 21:38:36 -0700 Rick1.local (1273)] INFO : Installing Rails3 Error instrumentation
+[06/19/13 21:38:36 -0700 Rick1.local (1273)] INFO : Finished instrumentation
+[06/19/13 21:38:36 -0700 Rick1.local (1273)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+[06/19/13 21:41:15 -0700 Rick1.local (1293)] ERROR : Unable to read configuration file : can't convert nil into String
+[06/19/13 21:41:15 -0700 Rick1.local (1293)] INFO : Starting the New Relic Agent.
+[06/19/13 21:41:15 -0700 Rick1.local (1293)] INFO : Environment: development
+[06/19/13 21:41:15 -0700 Rick1.local (1293)] INFO : Dispatcher: thin
+[06/19/13 21:41:15 -0700 Rick1.local (1293)] INFO : Application: development
+[06/19/13 21:41:15 -0700 Rick1.local (1293)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[06/19/13 21:41:15 -0700 Rick1.local (1293)] INFO : Installing DelayedJob instrumentation hooks
+[06/19/13 21:41:15 -0700 Rick1.local (1293)] INFO : Installing DelayedJob instrumentation
+[06/19/13 21:41:15 -0700 Rick1.local (1293)] INFO : Installing Net instrumentation
+[06/19/13 21:41:15 -0700 Rick1.local (1293)] INFO : Installing Rails 3 Controller instrumentation
+[06/19/13 21:41:15 -0700 Rick1.local (1293)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/19/13 21:41:15 -0700 Rick1.local (1293)] INFO : Installing Rails3 Error instrumentation
+[06/19/13 21:41:15 -0700 Rick1.local (1293)] INFO : Finished instrumentation
+[06/19/13 21:41:15 -0700 Rick1.local (1293)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
+>>>>>>> 9704b7f754b504941adbb6edd2aead7eb129d5d1
+[06/20/13 08:50:02 -0700 Stephens-MacBook-Pro.local (21052)] ERROR : Unable to read configuration file : can't convert nil into String
+[06/20/13 08:50:02 -0700 Stephens-MacBook-Pro.local (21052)] INFO : Starting the New Relic Agent.
+[06/20/13 08:50:02 -0700 Stephens-MacBook-Pro.local (21052)] INFO : Environment: test
+[06/20/13 08:50:02 -0700 Stephens-MacBook-Pro.local (21052)] INFO : Dispatcher: thin
+[06/20/13 08:50:02 -0700 Stephens-MacBook-Pro.local (21052)] INFO : Application: test
+[06/20/13 08:50:02 -0700 Stephens-MacBook-Pro.local (21052)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'test'
+[06/20/13 08:50:03 -0700 Stephens-MacBook-Pro.local (21052)] INFO : Installing DelayedJob instrumentation hooks
+[06/20/13 08:50:03 -0700 Stephens-MacBook-Pro.local (21052)] INFO : Installing DelayedJob instrumentation
+[06/20/13 08:50:03 -0700 Stephens-MacBook-Pro.local (21052)] INFO : Installing Net instrumentation
+[06/20/13 08:50:03 -0700 Stephens-MacBook-Pro.local (21052)] INFO : Installing Rails 3 Controller instrumentation
+[06/20/13 08:50:03 -0700 Stephens-MacBook-Pro.local (21052)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[06/20/13 08:50:03 -0700 Stephens-MacBook-Pro.local (21052)] INFO : Installing Rails3 Error instrumentation
+[06/20/13 08:50:03 -0700 Stephens-MacBook-Pro.local (21052)] INFO : Finished instrumentation
+[06/20/13 08:50:03 -0700 Stephens-MacBook-Pro.local (21052)] INFO : NewRelic::Agent::Samplers::DelayedJobSampler sampler not available: No DJ worker present
