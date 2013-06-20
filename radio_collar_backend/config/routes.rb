@@ -15,5 +15,4 @@ RadioCollarBackend::Application.routes.draw do
   root to: 'pages#index'
 
   match '/:unique_key' => 'mongoid_shortener/shortened_urls#translate', :via => :get, :constraints => { :unique_key => "~.+" }
-
 end
